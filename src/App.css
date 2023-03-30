@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-logo1 {
+  padding-bottom: 4em;
+}
+
+.App-logo2 {
+  padding: 1em;
+  background-image: url('bg_collaborator.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #282c34;
+  font-weight: bold;
+}
+
+
+.App-title {
+  font-size: 2em;
+  padding: 1em;
+}
+
+.App-square {
+  background-color: #fa2d83;
+  border-radius: 10px;
+  padding: 0.5em;
+  color: white;
+  font-size: 2em;
+}
+
+.App-collaborators {
+  font-size: 1em;
+  padding-top: 5em;
+  padding-bottom: 1em;
+}
+
