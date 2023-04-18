@@ -1,8 +1,8 @@
-.App {
+.Cover {
   text-align: center;
 }
 
-.App-header {
+.Cover-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -13,11 +13,11 @@
   color: white;
 }
 
-.App-logo1 {
+.Cover-logo1 {
   padding-bottom: 4em;
 }
 
-.App-logo2 {
+.Cover-logo2 {
   padding: 1em;
   background-image: url('bg_collaborator.png');
   background-repeat: no-repeat;
@@ -27,12 +27,12 @@
 }
 
 
-.App-title {
+.Cover-title {
   font-size: 2em;
   padding: 1em;
 }
 
-.App-square {
+.Cover-square {
   background-color: #fa2d83;
   border-radius: 10px;
   padding: 0.5em;
@@ -40,7 +40,7 @@
   font-size: 2em;
 }
 
-.App-collaborators {
+.Cover-collaborators {
   font-size: 1em;
   padding-top: 5em;
   padding-bottom: 1em;
