@@ -19,7 +19,7 @@
 
 .Cover-logo2 {
   padding: 1em;
-  background-image: url('bg_collaborator.png');
+  background-image: url('../assets/bg_collaborator.png');
   background-repeat: no-repeat;
   background-position: center;
   color: #282c34;
@@ -46,3 +46,19 @@
   padding-bottom: 1em;
 }
 
+.Cover-login {
+  margin-top: 3em;
+  padding: 0.5em;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.Cover-login:hover {
+  color: white;
+  background-color: #fa2d83;
+}
+
+.Cover-login:active {
+  color: rgb(124, 124, 130);
+}

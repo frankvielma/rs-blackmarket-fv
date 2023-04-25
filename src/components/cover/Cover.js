@@ -1,19 +1,18 @@
-import logo from "./rs_logo.png";
-import "./Cover.css";
+import { Link } from "react-router-dom";
+import logo from "../../assets/rs_logo.png";
+import "../../styles/Cover.css";
 
-function Cover() {
+export default function Cover() {
   return (
     <div className="Cover">
       <header className="Cover-header">
         <img src={logo} className="Cover-logo1" alt="logo" />
         <div className="Cover-title">Black Market</div>
         <div className="Cover-square">UI</div>
+        <Link to="/" className="Cover-login">Login / Sign up</Link>
         <div className="Cover-collaborators">Collaborators</div>
         <div className="Cover-logo2">FV</div>
-        
       </header>
     </div>
   );
 }
-
-export default Cover;
