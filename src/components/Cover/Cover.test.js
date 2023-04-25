@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { render, screen } from "@testing-library/react";
-import Cover from "./cover/Cover";
+import Cover from "./Cover";
 
 describe("Cover", () => {
   it("renders black market", () => {
