@@ -9,7 +9,7 @@ export default function Cover() {
         <img src={logo} className="Cover-logo1" alt="logo" />
         <div className="Cover-title">Black Market</div>
         <div className="Cover-square">UI</div>
-        <Link to="/SignUp" className="Cover-login">Login / Sign up</Link>
+        <Link to="/signup" className="Cover-login">Login / Sign up</Link>
         <div className="Cover-collaborators">Collaborators</div>
         <div className="Cover-logo2">FV</div>
       </header>
