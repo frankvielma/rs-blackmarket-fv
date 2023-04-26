@@ -1,29 +1,102 @@
-body {
-  font-size: 16px;
-  background-color: hsl(220, 13%, 18%);
-  margin: 0;
-}
+@media only screen and (max-width: 48rem) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-@media screen and (min-width: 768px) {
-  body {
+  h4 {
     font-size: 18px;
   }
 
-  .container {
-    padding: 0 32px;
+  body {
+    font-size: 16px;
   }
 }
 
-/* Desktop styles */
-@media screen and (min-width: 1024px) {
-  .container {
-    padding: 0 64px;
+@media only screen and (min-width: 48rem) {
+  h1 {
+    font-size: 2.25rem;
   }
+
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 4rem;
+  }
+}
+
+/* Colors */
+
+.black {
+  color: #00031a;
+}
+
+.white {
+  color: white;
+}
+
+.dark_grey {
+  color: #636363;
+}
+
+.grey {
+  color: #c4c4c4;
+}
+
+.light_grey {
+  color: #e0e0e0;
+}
+
+.background {
+  color: #f4f7fa;
+}
+
+.full_black {
+  color: black;
+}
+
+.focus {
+  color: #1d76ef;
+}
+
+.tags {
+  color: #559f21;
+}
+
+.hover {
+  color: #446cbc;
+}
+
+.active_outline {
+  color: #9ebbf3;
+}
+
+.error {
+  color: #d42f1a;
+}
+
+.links {
+  color: #076ce0;
+}
+
+.active {
+  color: #254a96;
 }
