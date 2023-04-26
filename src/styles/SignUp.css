@@ -1,0 +1,155 @@
+.container {
+  background-image: url("../assets/images/bm_wallpaper.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  font-family: "DMSans-Regular";
+}
+
+.form-container {
+  padding-left: 6rem;
+  max-width: 24rem;
+}
+
+.form {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.2) 0rem 0rem 0.25rem 0rem;
+  padding: 3rem 3rem 1.875rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.brand-container {
+  margin: 1rem 0rem 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.email,
+.password {
+  font-size: rem;
+  line-height: 1.3rem;
+}
+
+.input-email1 {
+  margin: 0.3rem 0rem 0.8rem;
+}
+
+.input-email2 {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.75rem;
+
+  width: 100%;
+  height: 2.75rem;
+  left: calc(50% - 18rem / 2);
+  top: calc(50% - 2.75rem / 2 + 10.15rem);
+
+  /* White */
+  background: #ffffff;
+
+  /* Background A */
+  border: 0.06rem solid #00031a;
+  border-radius: 0.5rem;
+ }
+
+.input-password1 {
+  margin: 0.3rem 0rem 0.8rem;
+}
+
+.input-password2 {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.75rem;
+
+  width: 100%;
+  height: 2.75rem;
+  left: calc(50% - 18rem / 2);
+  top: calc(50% - 2.75rem / 2 + 10.15rem);
+
+  /* White */
+  background: #ffffff;
+
+  /* Background A */
+  border: 0.06rem solid #00031a;
+  border-radius: 0.5rem;
+
+  background: url('../assets/images/visibility_off.png') no-repeat 16rem 0.875rem;
+  background-size: 1rem 0.875rem;
+ }
+
+
+.login-button1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-button2 {
+  background-color: rgb(31, 31, 31);
+  border: 0rem none rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0.3rem 0rem;
+  padding: 0.8rem;
+  width: 100%;
+  font-family: DMSans-Bold;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  border-radius: 0.5rem;
+}
+
+
+.forgot-password {
+  margin-top: 1.1875rem;
+  margin-bottom: 0rem;
+  color: rgb(7, 108, 224);
+  font-size: 1rem;
+  text-decoration: none solid rgb(7, 108, 224);
+  text-align: center;
+  font-weight: 700;
+}
+
+.container-signup {
+  padding: 1rem 3rem 2rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.2) 0rem 0rem 0.25rem 0rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.container-signup2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-account {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.button-sign-up {
+  background-color: rgb(255, 255, 255);
+  border: 0.0625rem solid rgb(0, 3, 26);
+  color: rgb(31, 31, 31);
+  cursor: pointer;
+  margin: 0.3rem 0rem;
+  padding: 0.8rem;
+  width: 100%;
+  font-family: DMSans-Bold;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  border-radius: 0.5rem;
+}
