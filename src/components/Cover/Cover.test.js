@@ -9,7 +9,7 @@ describe("Cover", () => {
         <Routes>
           <Route index element={<Cover />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>,
     );
 
     const linkElement = screen.getByText(/black market/i);
@@ -22,7 +22,7 @@ describe("Cover", () => {
         <Routes>
           <Route index element={<Cover />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>,
     );
 
     const linkElement = screen.getByText(/collaborators/i);

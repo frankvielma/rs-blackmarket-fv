@@ -1,10 +1,12 @@
-@media only screen and (max-width: 48rem) {
+@media only screen and (width <= 48rem) {
   h1 {
     font-size: 1.75rem;
   }
+
   h2 {
     font-size: 24px;
   }
+
   h3 {
     font-size: 20px;
   }
@@ -20,12 +22,11 @@
   .container {
     margin-left: 5%;
     margin-top: 5%;
-    font-family: "DMSans-Regular";
+    font-family: DMSans-Regular, sans-serif;
   }
-  
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (width >= 48rem) {
   h1 {
     font-size: 2.25rem;
   }
@@ -33,6 +34,7 @@
   h2 {
     font-size: 28px;
   }
+
   h3 {
     font-size: 24px;
   }
@@ -48,9 +50,8 @@
   .container {
     margin-left: 119px;
     margin-top: 66px;
-    font-family: "DMSans-Regular";
+    font-family: DMSans-Regular, sans-serif;
   }
-
 }
 
 /* Colors */
@@ -63,7 +64,7 @@
   color: white;
 }
 
-.dark_grey {
+.dark-grey {
   color: #636363;
 }
 
@@ -71,7 +72,7 @@
   color: #c4c4c4;
 }
 
-.light_grey {
+.light-grey {
   color: #e0e0e0;
 }
 
@@ -79,7 +80,7 @@
   color: #f4f7fa;
 }
 
-.full_black {
+.full-black {
   color: black;
 }
 
@@ -95,7 +96,7 @@
   color: #446cbc;
 }
 
-.active_outline {
+.active-outline {
   color: #9ebbf3;
 }
 

@@ -9,8 +9,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="*" element={<NoPage />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='*' element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   );

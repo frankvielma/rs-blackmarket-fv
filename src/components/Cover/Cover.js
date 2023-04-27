@@ -4,14 +4,16 @@ import "../../styles/Cover.css";
 
 export default function Cover() {
   return (
-    <div className="Cover">
-      <header className="Cover-header">
-        <img src={logo} className="Cover-logo1" alt="logo" />
-        <div className="Cover-title">Black Market</div>
-        <div className="Cover-square">UI</div>
-        <Link to="/signup" className="Cover-login">Login / Sign up</Link>
-        <div className="Cover-collaborators">Collaborators</div>
-        <div className="Cover-logo2">FV</div>
+    <div className='cover'>
+      <header className='cover-header'>
+        <img src={logo} className='cover-logo1' alt='logo' />
+        <div className='cover-title'>Black Market</div>
+        <div className='cover-square'>UI</div>
+        <Link to='/signup' className='cover-login'>
+          Login / Sign up
+        </Link>
+        <div className='cover-collaborators'>Collaborators</div>
+        <div className='cover-logo2'>FV</div>
       </header>
     </div>
   );

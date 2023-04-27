@@ -1,9 +1,9 @@
-.Cover {
+.cover {
   text-align: center;
 }
 
-.Cover-header {
-  background-color: hsl(220, 13%, 18%);
+.cover-header {
+  background-color: hsl(220deg 13% 18%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,26 +13,25 @@
   color: white;
 }
 
-.Cover-logo1 {
+.cover-logo1 {
   padding-bottom: 4em;
 }
 
-.Cover-logo2 {
+.cover-logo2 {
   padding: 1em;
-  background-image: url('../assets/images/bg_collaborator.png');
+  background-image: url("../assets/images/bg_collaborator.png");
   background-repeat: no-repeat;
   background-position: center;
   color: #282c34;
   font-weight: bold;
 }
 
-
-.Cover-title {
+.cover-title {
   font-size: 2em;
   padding: 1em;
 }
 
-.Cover-square {
+.cover-square {
   background-color: #fa2d83;
   border-radius: 10px;
   padding: 0.5em;
@@ -40,13 +39,13 @@
   font-size: 2em;
 }
 
-.Cover-collaborators {
+.cover-collaborators {
   font-size: 1em;
   padding-top: 5em;
   padding-bottom: 1em;
 }
 
-.Cover-login {
+.cover-login {
   margin-top: 3em;
   padding: 0.5em;
   font-size: 1em;
@@ -54,11 +53,11 @@
   text-decoration: none;
 }
 
-.Cover-login:hover {
+.cover-login:hover {
   color: white;
   background-color: #fa2d83;
 }
 
-.Cover-login:active {
-  color: rgb(124, 124, 130);
+.cover-login:active {
+  color: rgb(124 124 130);
 }

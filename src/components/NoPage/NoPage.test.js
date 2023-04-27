@@ -7,9 +7,9 @@ describe("No Page", () => {
     render(
       <BrowserRouter>
         <Routes>
-          <Route path="*" element={<NoPage />} />
+          <Route path='*' element={<NoPage />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>,
     );
 
     const linkElement = screen.getByText(/page not found/i);
@@ -20,9 +20,9 @@ describe("No Page", () => {
     render(
       <BrowserRouter>
         <Routes>
-          <Route path="*" element={<NoPage />} />
+          <Route path='*' element={<NoPage />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>,
     );
 
     const linkElement = screen.getByText(/home/i);
