@@ -16,6 +16,13 @@
   body {
     font-size: 16px;
   }
+
+  .container {
+    margin-left: 5%;
+    margin-top: 5%;
+    font-family: "DMSans-Regular";
+  }
+  
 }
 
 @media only screen and (min-width: 48rem) {
@@ -39,8 +46,11 @@
   }
 
   .container {
-    padding: 0 4rem;
+    margin-left: 119px;
+    margin-top: 66px;
+    font-family: "DMSans-Regular";
   }
+
 }
 
 /* Colors */
