@@ -62,7 +62,7 @@
   color: #ffffff;
   cursor: pointer;
   padding: 0.8rem;
-  width: 288px;
+  width: 18rem;
   font-family: DMSans-Bold, sans-serif;
   font-size: 1rem;
   line-height: 1.3rem;
@@ -109,4 +109,55 @@
   font-weight: 700;
   font-size: 1rem;
   border-radius: 0.5rem;
+}
+
+@media only screen and (width <= 48rem) {
+  .input-email2 {
+    box-sizing: border-box;
+    padding-left: 0.625rem;
+    width: 100%;
+    height: 2.75rem;
+    background: #ffffff;
+    border: 0.06rem solid #00031a;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .input-password2 {
+    box-sizing: border-box;
+    padding-left: 0.625rem;
+    width: 100%;
+    height: 2.75rem;
+    border: 0.06rem solid #00031a;
+    border-radius: 0.5rem;
+    background: url("../assets/images/visibility_off.png") no-repeat 95% 0.875rem;
+    background-size: 1rem 0.875rem;
+    font-size: 1rem;
+    font-style: normal;
+  }
+
+  .login-button2 {
+    background-color: #1f1f1f;
+    border: 0 none #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.8rem;
+    width: 100%;
+    font-family: DMSans-Bold, sans-serif;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    border-radius: 0.5rem;
+  }
+
+  .button-sign-up {
+    background-color: #ffffff;
+    border: 0.0625rem solid #00031a;
+    color: #1f1f1f;
+    cursor: pointer;
+    width: 100%;
+    height: 2.75rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+  }
 }
