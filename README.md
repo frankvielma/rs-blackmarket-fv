@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/frankvielma/rs-blackmarket-fv/branch/main/graph/badge.svg?token=EBTBBYP3LB)](https://codecov.io/gh/frankvielma/rs-blackmarket-fv)
+[![codecov](https://codecov.io/gh/frankvielma/rs-blackmarket-fv/branch/develop/graph/badge.svg?token=EBTBBYP3LB)](https://codecov.io/gh/frankvielma/rs-blackmarket-fv)
 ![status](https://github.com/frankvielma/rs-blackmarket-fv/actions/workflows/main.yml/badge.svg)
 
 # RS Blackmarket
