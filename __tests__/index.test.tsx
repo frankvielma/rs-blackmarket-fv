@@ -6,7 +6,7 @@ describe('Home', () => {
     render(<Home />)
 
     const title = screen.getByText(/Get started by editing/i)
-  
+
     expect(title).toBeInTheDocument()
   })
 })
