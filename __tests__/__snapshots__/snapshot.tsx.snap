@@ -3,10 +3,10 @@
 exports[`renders homepage unchanged 1`] = `
 <div>
   <main
-    class="h-[100vh] bg-black flex flex-col items-center text-white"
+    class="flex flex-col items-center text-center text-white"
   >
     <div
-      class="flex justify-center mt-24"
+      class="mt-16 sm:mt-28"
     >
       <img
         alt="Rs Logo"
@@ -21,22 +21,22 @@ exports[`renders homepage unchanged 1`] = `
       />
     </div>
     <div
-      class="flex mt-36 text-5xl font-semibold"
+      class="mt-32 text-5xl font-semibold sm:mt-40"
     >
       Black Market
     </div>
     <div
-      class="mt-20 rounded-xl flex p-9 py-6 justify-center text-5xl bg-pink-600"
+      class="mt-20 rounded-xl bg-pink-600 p-9 py-6 text-5xl sm:mt-32"
     >
       UI
     </div>
     <div
-      class="flex mt-28 font-normal text-2xl"
+      class="mt-28 text-2xl font-normal sm:mt-32"
     >
       Collaborators
     </div>
     <div
-      class="mt-16 bg-[url('/images/bg_collaborator.png')] bg-no-repeat w-16 text-black p-4 font-semibold text-2xl"
+      class="mt-14 w-16 bg-[url('/images/bg_collaborator.png')] bg-no-repeat p-4 text-2xl font-semibold text-black"
     >
       FV
     </div>
