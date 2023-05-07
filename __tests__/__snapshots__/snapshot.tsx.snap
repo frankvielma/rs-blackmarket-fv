@@ -3,10 +3,10 @@
 exports[`renders homepage unchanged 1`] = `
 <div>
   <main
-    class="flex flex-col items-center text-center text-white"
+    class="flex flex-col items-center text-center font-sans text-white"
   >
     <div
-      class="mt-16 sm:mt-28"
+      class="mt-16"
     >
       <img
         alt="Rs Logo"
@@ -21,17 +21,17 @@ exports[`renders homepage unchanged 1`] = `
       />
     </div>
     <div
-      class="mt-32 text-5xl font-semibold sm:mt-40"
+      class="mt-32 text-5xl font-semibold"
     >
       Black Market
     </div>
     <div
-      class="mt-20 rounded-xl bg-pink-600 p-9 py-6 text-5xl sm:mt-32"
+      class="mt-20 rounded-xl bg-pink-600 p-9 py-6 text-5xl"
     >
       UI
     </div>
     <div
-      class="mt-28 text-2xl font-normal sm:mt-32"
+      class="mt-28 text-2xl font-normal"
     >
       Collaborators
     </div>
