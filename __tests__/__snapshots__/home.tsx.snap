@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <main
+    class="flex flex-col items-center text-center font-sans text-white"
+  >
+    <div
+      class="mt-16"
+    >
+      <img
+        alt="Rs Logo"
+        data-nimg="1"
+        decoding="async"
+        height="162"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Frs_logo.png&w=384&q=75"
+        srcset="/_next/image?url=%2Fimages%2Frs_logo.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Frs_logo.png&w=384&q=75 2x"
+        style="color: transparent;"
+        width="162"
+      />
+    </div>
+    <div
+      class="mt-32 text-5xl font-semibold"
+    >
+      Black Market
+    </div>
+    <div
+      class="mt-20 rounded-xl bg-pink-600 p-9 py-6 text-5xl"
+    >
+      UI
+    </div>
+    <a
+      class="mt-10 hover:text-blue-600 hover:underline focus:rounded-lg focus:border-2 focus:border-dashed focus:border-blue-500 focus:px-3 focus:outline-none active:text-blue-700"
+      href="/login"
+    >
+      Login / SignUp
+    </a>
+    <div
+      class="mt-20 text-2xl"
+    >
+      Collaborators
+    </div>
+    <div
+      class="mt-10 w-16 bg-[url('/images/bg_collaborator.png')] bg-no-repeat p-4 text-2xl font-semibold text-black"
+    >
+      FV
+    </div>
+  </main>
+</div>
+`;
