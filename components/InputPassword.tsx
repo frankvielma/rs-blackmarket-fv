@@ -6,7 +6,7 @@ export default function InputPassword({
   label = '',
   placeholder = '',
 }) {
-  const [isActive, setActive] = useState(false)
+  const [isActive, setActive] = useState(true)
   const toggleVisibility = () => {
     setActive(!isActive)
   }
