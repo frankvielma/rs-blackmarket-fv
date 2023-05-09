@@ -21,17 +21,17 @@ exports[`renders homepage unchanged 1`] = `
       />
     </div>
     <div
-      class="mt-32 text-5xl font-semibold"
+      class="mt-20 text-5xl sm:text-[6.25rem] font-semibold"
     >
       Black Market
     </div>
     <div
-      class="mt-20 rounded-xl bg-pink-600 p-9 py-6 text-5xl"
+      class="mt-20 rounded-xl bg-pink-600 p-9 py-6 text-[3.4rem] sm:text-5xl"
     >
       UI
     </div>
     <a
-      class="mt-10 hover:text-blue-600 hover:underline focus:rounded-lg focus:border-2 focus:border-dashed focus:border-blue-500 focus:px-3 focus:outline-none active:text-blue-700"
+      class="mt-16 hover:text-blue-600 hover:underline focus:rounded-lg focus:border-2 focus:border-dashed focus:border-blue-500 focus:px-3 focus:outline-none active:text-blue-700"
       href="/login"
     >
       Login / SignUp
