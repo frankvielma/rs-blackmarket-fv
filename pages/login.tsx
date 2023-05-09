@@ -1,10 +1,13 @@
 import Image from 'next/image'
 import InputField from '@/components/InputField'
 import InputPassword from '@/components/InputPassword'
+import { dmsans } from '@/components/fonts'
 
 export default function Login() {
   return (
-    <main className="flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-slate-950 sm:px-28">
+    <main
+      className={`flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-slate-950 sm:px-28 ${dmsans.className}`}
+    >
       <div className="h-[366px] max-w-[328px] rounded-lg border-black bg-white">
         <div className="py-[40px] pb-4">
           <Image

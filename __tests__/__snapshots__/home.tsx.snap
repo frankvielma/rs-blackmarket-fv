@@ -3,7 +3,7 @@
 exports[`renders homepage unchanged 1`] = `
 <div>
   <main
-    class="flex flex-col items-center text-center font-sans text-white"
+    class="flex flex-col items-center text-center text-white className"
   >
     <div
       class="mt-16"

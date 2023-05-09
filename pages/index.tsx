@@ -1,8 +1,11 @@
 import Image from 'next/image'
+import { inter } from '@/components/fonts'
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center text-center font-sans text-white">
+    <main
+      className={`flex flex-col items-center text-center text-white ${inter.className}`}
+    >
       <div className="mt-16">
         <Image
           src="/images/rs_logo.png"
