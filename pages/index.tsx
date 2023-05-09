@@ -4,7 +4,12 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center text-center font-sans text-white">
       <div className="mt-16">
-      <Image src="/images/rs_logo.png" height={162} width={162} alt="Rs Logo" />
+        <Image
+          src="/images/rs_logo.png"
+          height={162}
+          width={162}
+          alt="Rs Logo"
+        />
       </div>
       <div className="mt-32 text-5xl font-semibold">Black Market</div>
       <div className="mt-20 rounded-xl bg-pink-600 p-9 py-6 text-5xl">UI</div>
