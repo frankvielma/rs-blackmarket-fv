@@ -48,7 +48,7 @@ export default function Login() {
         </div>
       </div>
       <div className="mt-4 h-[121px] max-w-[328px] rounded-lg border-black bg-white">
-        <div className="mt-5 text-center">Don't have an account?</div>
+        <div className="mt-5 text-center">Don&apos;t have an account?</div>
 
         <div className="mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-slate-950 bg-white p-2 text-center font-bold text-black ">
           <a
