@@ -15,8 +15,12 @@ export default function Home() {
           alt="Rs Logo"
         />
       </div>
-      <div className="mt-20 text-5xl sm:text-[6.25rem] font-semibold">Black Market</div>
-      <div className="mt-20 rounded-xl bg-pink-600 p-9 py-6 text-[3.4rem] sm:text-5xl">UI</div>
+      <div className="mt-20 text-5xl font-semibold sm:text-[6.25rem]">
+        Black Market
+      </div>
+      <div className="mt-20 rounded-xl bg-pink-600 p-9 py-6 text-[3.4rem] sm:text-5xl">
+        UI
+      </div>
       <Link
         href="/login"
         className="mt-16 hover:text-blue-600 hover:underline focus:rounded-lg focus:border-2 focus:border-dashed focus:border-blue-500 focus:px-3 focus:outline-none active:text-blue-700"

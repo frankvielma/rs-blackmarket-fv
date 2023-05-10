@@ -21,7 +21,7 @@ exports[`renders homepage unchanged 1`] = `
       />
     </div>
     <div
-      class="mt-20 text-5xl sm:text-[6.25rem] font-semibold"
+      class="mt-20 text-5xl font-semibold sm:text-[6.25rem]"
     >
       Black Market
     </div>
