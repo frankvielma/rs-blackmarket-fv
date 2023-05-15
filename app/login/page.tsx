@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import InputField from '@/components/InputField'
 import InputPassword from '@/components/InputPassword'
