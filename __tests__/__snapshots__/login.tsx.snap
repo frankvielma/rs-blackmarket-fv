@@ -3,13 +3,13 @@
 exports[`renders homepage unchanged 1`] = `
 <div>
   <main
-    class="flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-slate-950 sm:px-28 className"
+    class="flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-slate-950 md:px-28 className"
   >
     <div
-      class="h-[366px] max-w-[328px] rounded-lg border-black bg-white"
+      class="h-[366px] max-w-[328px] rounded-lg border-black bg-white md:h-[425px] md:max-w-[360px]"
     >
       <div
-        class="py-[40px] pb-4"
+        class="pb-9 pt-[40px] md:p-[47px] md:pb-12"
       >
         <img
           alt="Black Market Logo"
@@ -26,16 +26,16 @@ exports[`renders homepage unchanged 1`] = `
       </div>
       <form>
         <div
-          class="my-4 flex flex-col"
+          class="flex flex-col"
         >
           <label
-            class="px-[34px] text-sm text-slate-950"
+            class="px-[34px] text-sm text-slate-950 md:text-base"
             for="email"
           >
             Email
           </label>
           <input
-            class="mx-[34px] h-[34px] w-auto rounded-md border border-slate-950 ps-3 placeholder:text-base placeholder:text-neutral-500"
+            class="mx-[34px] h-[34px] w-auto rounded-md border border-slate-950 ps-3 placeholder-gray-500 placeholder:text-base placeholder:text-neutral-500 md:h-[44px]"
             name="email"
             placeholder="Type your email"
             type="email"
@@ -45,22 +45,23 @@ exports[`renders homepage unchanged 1`] = `
           class="my-4 flex flex-col"
         >
           <label
-            class="px-[34px] text-sm text-slate-950"
+            class="px-[34px] text-sm text-slate-950 md:text-base"
             for="password"
           >
             Password
           </label>
           <input
-            class="mx-[34px] h-[34px] w-auto rounded-md border border-slate-950 ps-3 placeholder:text-base placeholder:text-neutral-500"
+            class="mx-[34px] h-[34px] w-auto rounded-md border border-slate-950 ps-3 placeholder:text-base placeholder:text-neutral-500 md:h-[44px]"
             name="password"
             placeholder="Type your password"
             type="password"
           />
           <div
-            class="absolute mx-[260px] mt-8 w-4"
+            class="absolute mt-8 w-auto ps-[16.5rem] md:absolute md:mt-10 md:ps-[18.5rem]"
           >
             <img
               alt=""
+              class="w-4"
               data-nimg="1"
               decoding="async"
               height="32"
@@ -83,18 +84,18 @@ exports[`renders homepage unchanged 1`] = `
         </div>
       </form>
       <div
-        class="py-4 text-center"
+        class="pt-4 text-center md:pt-9"
       >
         <a
-          class="mt-10 text-blue-600 hover:underline focus:rounded-lg focus:border-2 focus:border-dashed focus:border-blue-500 focus:px-3 focus:outline-none active:text-blue-700"
+          class="mt-10 font-bold text-blue-600 hover:underline focus:rounded-lg focus:border-2 focus:border-dashed focus:border-blue-500 focus:px-3 focus:outline-none active:text-blue-700"
           href="/forgot-password"
         >
-          I forgot my password
+          I forgot my password.
         </a>
       </div>
     </div>
     <div
-      class="mt-4 h-[121px] max-w-[328px] rounded-lg border-black bg-white"
+      class="mt-4 h-[121px] max-w-[328px] rounded-lg border-black bg-white md:h-[130px] md:max-w-[360px]"
     >
       <div
         class="mt-5 text-center"

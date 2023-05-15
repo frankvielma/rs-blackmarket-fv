@@ -6,10 +6,10 @@ import { dmsans } from '@/components/fonts'
 export default function Login() {
   return (
     <main
-      className={`flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-slate-950 sm:px-28 ${dmsans.className}`}
+      className={`flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-slate-950 md:px-28 ${dmsans.className}`}
     >
-      <div className="h-[366px] max-w-[328px] rounded-lg border-black bg-white">
-        <div className="py-[40px] pb-4">
+      <div className="h-[366px] max-w-[328px] rounded-lg border-black bg-white md:h-[425px] md:max-w-[360px]">
+        <div className="pb-9 pt-[40px] md:p-[47px] md:pb-12">
           <Image
             className="m-auto"
             src="/images/bm_logo.png"
@@ -38,16 +38,16 @@ export default function Login() {
             />
           </div>
         </form>
-        <div className="py-4 text-center">
+        <div className="pt-4 text-center md:pt-9">
           <a
             href="/forgot-password"
-            className="mt-10 text-blue-600 hover:underline focus:rounded-lg focus:border-2 focus:border-dashed focus:border-blue-500 focus:px-3 focus:outline-none active:text-blue-700"
+            className="mt-10 font-bold text-blue-600 hover:underline focus:rounded-lg focus:border-2 focus:border-dashed focus:border-blue-500 focus:px-3 focus:outline-none active:text-blue-700"
           >
-            I forgot my password
+            I forgot my password.
           </a>
         </div>
       </div>
-      <div className="mt-4 h-[121px] max-w-[328px] rounded-lg border-black bg-white">
+      <div className="mt-4 h-[121px] max-w-[328px] rounded-lg border-black bg-white md:h-[130px] md:max-w-[360px]">
         <div className="mt-5 text-center">Don&apos;t have an account?</div>
 
         <div className="mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-slate-950 bg-white p-2 text-center font-bold text-black ">
