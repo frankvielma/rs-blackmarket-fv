@@ -35,14 +35,14 @@ export default function Login() {
             <input
               type="submit"
               value="Log in"
-              className="mx-[34px] h-[44px] w-auto rounded-md border border-slate-950 bg-slate-950 font-bold text-white"
+              className="custom-focus mx-[34px] h-[44px] w-auto rounded-md border border-slate-950 bg-slate-950 font-bold text-white"
             />
           </div>
         </form>
         <div className="pt-4 text-center md:pt-9">
           <a
             href="/forgot-password"
-            className="mt-10 font-bold text-blue-600 hover:underline focus:rounded-lg focus:border-2 focus:border-dashed focus:border-blue-500 focus:px-3 focus:outline-none active:text-blue-700"
+            className="custom-focus mt-10 font-bold text-blue-600 hover:underline "
           >
             I forgot my password.
           </a>
@@ -51,13 +51,8 @@ export default function Login() {
       <div className="mt-4 h-[121px] max-w-[328px] rounded-lg border-black bg-white md:h-[130px] md:max-w-[360px]">
         <div className="mt-5 text-center">Don&apos;t have an account?</div>
 
-        <div className="mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-slate-950 bg-white p-2 text-center font-bold text-black ">
-          <a
-            href="/sign-up"
-            className="focus:rounded-lg focus:border-2 focus:border-dashed focus:border-blue-500 focus:px-3 focus:outline-none active:text-blue-700"
-          >
-            Sign up
-          </a>
+        <div className="custom-focus mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-slate-950 bg-white p-2 text-center font-bold text-black ">
+          <button className="focus:outline-none">Sign up</button>
         </div>
       </div>
     </main>
