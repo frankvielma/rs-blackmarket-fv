@@ -21,7 +21,7 @@ export default function InputPassword({
       </label>
       <div className="flex flex-col">
         <input
-          className="custom-input custom-focus custom-active md:h-[44px]"
+          className="custom-input custom-focus custom-hover custom-active md:h-[44px]"
           name={name}
           placeholder={placeholder}
           type={isActive ? 'password' : 'text'}

@@ -30,10 +30,18 @@ body {
   @apply hover:border-indigo-700 focus:outline-dashed focus:outline-2 focus:outline-offset-2 focus:outline-blue-700 active:outline-double active:outline-4 active:outline-offset-0 active:outline-blue-900;
 } */
 
+.custom-hover {
+  @apply hover:border-indigo-700
+}
+
 .custom-focus {
-  @apply focus-within:rounded focus-within:outline-dashed focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-700 hover:border-indigo-700;
+  @apply focus-within:rounded focus-within:outline-dashed focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-700;
 }
 
 .custom-active {
   @apply active:outline-double active:outline-4 active:outline-offset-0 active:outline-blue-900;
+}
+
+.btn-hover {
+  @apply hover:bg-[#446CBC]
 }

@@ -15,7 +15,7 @@ export default function InputField({
       <input
         name={name}
         placeholder={placeholder}
-        className="custom-input custom-focus custom-active md:h-[44px]"
+        className="custom-input custom-focus custom-hover custom-active md:h-[44px]"
         type={type}
       />
     </div>
