@@ -42,7 +42,7 @@ export default function Login() {
         <div className="pt-4 text-center md:pt-9">
           <a
             href="/forgot-password"
-            className="custom-focus mt-10 font-bold text-blue-600 hover:underline "
+            className="custom-focus mt-10 font-bold text-blue-600 hover:underline active:text-blue-900 "
           >
             I forgot my password.
           </a>
