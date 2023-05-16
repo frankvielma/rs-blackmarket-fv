@@ -35,7 +35,7 @@ export default function Login() {
             <input
               type="submit"
               value="Log in"
-              className="custom-focus mx-[34px] h-[44px] w-auto rounded-md border border-slate-950 bg-slate-950 font-bold text-white"
+              className="custom-focus custom-active mx-[34px] h-[44px] w-auto rounded-md border border-slate-950 bg-slate-950 font-bold text-white"
             />
           </div>
         </form>
@@ -51,7 +51,7 @@ export default function Login() {
       <div className="mt-4 h-[121px] max-w-[328px] rounded-lg border-black bg-white md:h-[130px] md:max-w-[360px]">
         <div className="mt-5 text-center">Don&apos;t have an account?</div>
 
-        <div className="custom-focus mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-slate-950 bg-white p-2 text-center font-bold text-black ">
+        <div className="custom-focus custom-active mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-slate-950 bg-white p-2 text-center font-bold text-black ">
           <button className="focus:outline-none">Sign up</button>
         </div>
       </div>
