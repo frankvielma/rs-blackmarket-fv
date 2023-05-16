@@ -42,7 +42,7 @@ exports[`renders homepage unchanged 1`] = `
           />
         </div>
         <div
-          class="my-4 flex flex-col"
+          class="relative my-4"
         >
           <label
             class="px-[34px] text-sm text-slate-950 md:text-base"
@@ -50,27 +50,30 @@ exports[`renders homepage unchanged 1`] = `
           >
             Password
           </label>
-          <input
-            class="mx-[34px] h-[34px] w-auto rounded-md border border-slate-950 ps-3 placeholder:text-base placeholder:text-neutral-500 md:h-[44px]"
-            name="password"
-            placeholder="Type your password"
-            type="password"
-          />
           <div
-            class="absolute mt-8 w-auto ps-[16.5rem] md:absolute md:mt-10 md:ps-[18.5rem]"
+            class="flex flex-col"
           >
-            <img
-              alt=""
-              class="w-4"
-              data-nimg="1"
-              decoding="async"
-              height="32"
-              loading="lazy"
-              src="/_next/image?url=%2Fimages%2Fvisibility_off.png&w=64&q=75"
-              srcset="/_next/image?url=%2Fimages%2Fvisibility_off.png&w=32&q=75 1x, /_next/image?url=%2Fimages%2Fvisibility_off.png&w=64&q=75 2x"
-              style="color: transparent;"
-              width="32"
+            <input
+              class="mx-[34px] h-[34px] w-auto rounded-md border border-slate-950 ps-3 placeholder-gray-500 placeholder:text-base placeholder:text-neutral-500 md:h-[44px]"
+              name="password"
+              placeholder="Type your password"
+              type="password"
             />
+            <div
+              class="absolute right-12 pt-2 md:pt-4"
+            >
+              <img
+                alt=""
+                class="w-4"
+                data-nimg="1"
+                decoding="async"
+                height="16"
+                loading="lazy"
+                src="/icons/visibility_off.svg"
+                style="color: transparent;"
+                width="16"
+              />
+            </div>
           </div>
         </div>
         <div

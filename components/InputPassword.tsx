@@ -12,30 +12,32 @@ export default function InputPassword({
   }
 
   return (
-    <div className="my-4 flex flex-col">
+    <div className="relative my-4">
       <label
         htmlFor="password"
         className="px-[34px] text-sm text-slate-950 md:text-base"
       >
         {label}
       </label>
-      <input
-        name={name}
-        placeholder={placeholder}
-        className="mx-[34px] h-[34px] w-auto rounded-md border border-slate-950 ps-3 placeholder:text-base placeholder:text-neutral-500 md:h-[44px]"
-        type={isActive ? 'password' : 'text'}
-      />
-      <div
-        className="absolute mt-8 w-auto ps-[16.5rem] md:absolute md:mt-10 md:ps-[18.5rem]"
-        onClick={toggleVisibility}
-      >
-        <Image
-          className="w-4"
-          src={`/images/visibility_${isActive ? 'off' : 'on'}.png`}
-          height={32}
-          width={32}
-          alt=""
+      <div className="flex flex-col">
+        <input
+          className="mx-[34px] h-[34px] w-auto rounded-md border border-slate-950 ps-3 placeholder-gray-500 placeholder:text-base placeholder:text-neutral-500 md:h-[44px]"
+          name={name}
+          placeholder={placeholder}
+          type={isActive ? 'password' : 'text'}
         />
+        <div
+          className="absolute right-12 pt-2 md:pt-4"
+          onClick={toggleVisibility}
+        >
+          <Image
+            className="w-4"
+            src={`/icons/visibility_${isActive ? 'off' : 'on'}.svg`}
+            height={16}
+            width={16}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   )
