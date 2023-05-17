@@ -1,21 +1,15 @@
 'use client'
-import Image from 'next/image'
+
 import InputField from '@/components/InputField'
 import InputPassword from '@/components/InputPassword'
+import Logo from '@/components/Logo'
+import Button from '@/components/Button'
 
 export default function Login() {
   return (
     <main className="flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-dark-violet md:px-28">
-      <div className="h-[366px] max-w-[328px] rounded-lg border-black bg-white md:h-[425px] md:max-w-[360px]">
-        <div className="pb-9 pt-[40px] md:p-[47px] md:pb-12">
-          <Image
-            className="m-auto"
-            src="/images/bm_logo.png"
-            height={173}
-            width={173}
-            alt="Black Market Logo"
-          />
-        </div>
+      <div className="h-[366px] max-w-[328px] rounded-lg border-black bg-white px-[34px] md:h-[425px] md:max-w-[360px]">
+        <Logo />
         <form>
           <InputField
             type={'email'}
@@ -39,7 +33,7 @@ export default function Login() {
         <div className="pt-4 text-center md:pt-9">
           <a
             href="/forgot-password"
-            className="custom-focus mt-10 font-bold text-links hover:underline active:text-active"
+            className="link-focus link-hover link-active mt-10"
           >
             I forgot my password.
           </a>
@@ -47,10 +41,7 @@ export default function Login() {
       </div>
       <div className="mt-4 h-[121px] max-w-[328px] rounded-lg border-black bg-white md:h-[130px] md:max-w-[360px]">
         <div className="mt-5 text-center">Don&apos;t have an account?</div>
-
-        <div className="custom-focus custom-active custom-hover btn-hover mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-dark-violet bg-white p-2 text-center font-bold text-black active:bg-hover">
-          <button className="focus:outline-none">Sign up</button>
-        </div>
+        <Button name={'Sign Up'} link={'/signup'} />
       </div>
     </main>
   )

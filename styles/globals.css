@@ -23,7 +23,7 @@ body {
 }
 
 .custom-input {
-  @apply mx-[34px] h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray;
+  @apply h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray;
 }
 
 .custom-hover {
@@ -40,4 +40,37 @@ body {
 
 .btn-hover {
   @apply hover:bg-hover;
+}
+
+.btn-standard {
+  @apply border-dark-violet bg-dark-violet font-bold text-white;
+}
+
+.btn-disabled {
+  @apply bg-light-gray font-bold text-dark-gray;
+}
+
+/* Links with states */
+.link-default {
+  @apply text-links;
+}
+
+.link-disabled {
+  @apply text-dark-gray;
+}
+
+.link-hover {
+  @apply hover:text-links hover:underline;
+}
+
+.link-focus {
+  @apply custom-focus font-bold text-focus;
+}
+
+.link-active {
+  @apply active:font-bold active:text-active;
+}
+
+.link-disabled {
+  @apply font-normal text-dark-gray;
 }

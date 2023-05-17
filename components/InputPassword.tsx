@@ -13,7 +13,7 @@ export default function InputPassword({
 
   return (
     <div className="relative my-4">
-      <label htmlFor="password" className="px-[34px] text-sm md:text-base">
+      <label htmlFor="password" className="text-sm md:text-base">
         {label}
       </label>
       <div className="flex flex-col">
@@ -24,7 +24,7 @@ export default function InputPassword({
           type={isActive ? 'password' : 'text'}
         />
         <div
-          className="absolute right-12 pt-2 md:pt-4"
+          className="absolute right-4 pt-2 md:pt-4"
           onClick={toggleVisibility}
         >
           <Image

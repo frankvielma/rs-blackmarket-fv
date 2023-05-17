@@ -5,8 +5,8 @@ export default function InputField({
   placeholder = '',
 }) {
   return (
-    <div className="flex flex-col">
-      <label htmlFor={type} className="px-[34px] text-sm md:text-base">
+    <div className="my-4 flex flex-col">
+      <label htmlFor={type} className="text-sm md:text-base">
         {label}
       </label>
       <input

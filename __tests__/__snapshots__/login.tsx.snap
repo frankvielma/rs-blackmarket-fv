@@ -6,10 +6,10 @@ exports[`renders homepage unchanged 1`] = `
     class="flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-dark-violet md:px-28"
   >
     <div
-      class="h-[366px] max-w-[328px] rounded-lg border-black bg-white md:h-[425px] md:max-w-[360px]"
+      class="h-[366px] max-w-[328px] rounded-lg border-black bg-white px-[34px] md:h-[425px] md:max-w-[360px]"
     >
       <div
-        class="pb-9 pt-[40px] md:p-[47px] md:pb-12"
+        class="pb-5 pt-[40px] md:p-[47px] md:pb-12"
       >
         <img
           alt="Black Market Logo"
@@ -26,10 +26,10 @@ exports[`renders homepage unchanged 1`] = `
       </div>
       <form>
         <div
-          class="flex flex-col"
+          class="my-4 flex flex-col"
         >
           <label
-            class="px-[34px] text-sm md:text-base"
+            class="text-sm md:text-base"
             for="email"
           >
             Email
@@ -45,7 +45,7 @@ exports[`renders homepage unchanged 1`] = `
           class="relative my-4"
         >
           <label
-            class="px-[34px] text-sm md:text-base"
+            class="text-sm md:text-base"
             for="password"
           >
             Password
@@ -60,7 +60,7 @@ exports[`renders homepage unchanged 1`] = `
               type="password"
             />
             <div
-              class="absolute right-12 pt-2 md:pt-4"
+              class="absolute right-4 pt-2 md:pt-4"
             >
               <img
                 alt=""
@@ -90,7 +90,7 @@ exports[`renders homepage unchanged 1`] = `
         class="pt-4 text-center md:pt-9"
       >
         <a
-          class="custom-focus mt-10 font-bold text-links hover:underline active:text-active"
+          class="link-focus link-hover link-active mt-10"
           href="/forgot-password"
         >
           I forgot my password.
@@ -105,15 +105,20 @@ exports[`renders homepage unchanged 1`] = `
       >
         Don't have an account?
       </div>
-      <div
-        class="custom-focus custom-active custom-hover btn-hover mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-dark-violet bg-white p-2 text-center font-bold text-black active:bg-hover"
+      <a
+        class="focus:outline-none"
+        href="/signup"
       >
-        <button
-          class="focus:outline-none"
+        <div
+          class="custom-focus custom-active custom-hover btn-hover mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-dark-violet bg-white p-2 text-center font-bold text-black active:bg-hover"
         >
-          Sign up
-        </button>
-      </div>
+          <button
+            class="focus:outline-none"
+          >
+            Sign Up
+          </button>
+        </div>
+      </a>
     </div>
   </main>
 </div>
