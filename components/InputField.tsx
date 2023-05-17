@@ -6,10 +6,7 @@ export default function InputField({
 }) {
   return (
     <div className="flex flex-col">
-      <label
-        htmlFor={type}
-        className="px-[34px] text-sm text-slate-950 md:text-base"
-      >
+      <label htmlFor={type} className="px-[34px] text-sm md:text-base">
         {label}
       </label>
       <input

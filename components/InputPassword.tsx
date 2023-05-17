@@ -13,10 +13,7 @@ export default function InputPassword({
 
   return (
     <div className="relative my-4">
-      <label
-        htmlFor="password"
-        className="px-[34px] text-sm text-slate-950 md:text-base"
-      >
+      <label htmlFor="password" className="px-[34px] text-sm md:text-base">
         {label}
       </label>
       <div className="flex flex-col">

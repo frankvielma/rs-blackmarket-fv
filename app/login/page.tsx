@@ -2,13 +2,10 @@
 import Image from 'next/image'
 import InputField from '@/components/InputField'
 import InputPassword from '@/components/InputPassword'
-import { dmsans } from '@/components/fonts'
 
 export default function Login() {
   return (
-    <main
-      className={`flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-slate-950 md:px-28 ${dmsans.className}`}
-    >
+    <main className="flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-dark-violet md:px-28">
       <div className="h-[366px] max-w-[328px] rounded-lg border-black bg-white md:h-[425px] md:max-w-[360px]">
         <div className="pb-9 pt-[40px] md:p-[47px] md:pb-12">
           <Image
@@ -35,14 +32,14 @@ export default function Login() {
             <input
               type="submit"
               value="Log in"
-              className="custom-focus custom-active btn-hover mx-[34px] h-[44px] w-auto rounded-md border border-slate-950 bg-slate-950 font-bold text-white"
+              className="custom-focus custom-active btn-hover mx-[34px] h-[44px] w-auto rounded-md border border-dark-violet bg-dark-violet font-bold text-white"
             />
           </div>
         </form>
         <div className="pt-4 text-center md:pt-9">
           <a
             href="/forgot-password"
-            className="custom-focus mt-10 font-bold text-blue-600 hover:underline active:text-blue-900 "
+            className="custom-focus mt-10 font-bold text-links hover:underline active:text-active"
           >
             I forgot my password.
           </a>
@@ -51,7 +48,7 @@ export default function Login() {
       <div className="mt-4 h-[121px] max-w-[328px] rounded-lg border-black bg-white md:h-[130px] md:max-w-[360px]">
         <div className="mt-5 text-center">Don&apos;t have an account?</div>
 
-        <div className="custom-focus custom-active custom-hover btn-hover mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-slate-950 bg-white p-2 text-center font-bold text-black active:bg-blue-900">
+        <div className="custom-focus custom-active custom-hover btn-hover mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-dark-violet bg-white p-2 text-center font-bold text-black active:bg-hover">
           <button className="focus:outline-none">Sign up</button>
         </div>
       </div>

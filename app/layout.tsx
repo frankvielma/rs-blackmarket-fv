@@ -1,7 +1,5 @@
 import '@/styles/globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { dmsans } from '@/components/fonts'
 
 export const metadata = {
   title: 'RS Blackmarket',
@@ -15,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={dmsans.className}>{children}</body>
     </html>
   )
 }
