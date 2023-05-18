@@ -1,6 +1,6 @@
 export default function InputField({
   type = '',
-  name = '',
+  id = '',
   label = '',
   placeholder = '',
 }) {
@@ -10,7 +10,7 @@ export default function InputField({
         {label}
       </label>
       <input
-        name={name}
+        id={id}
         placeholder={placeholder}
         className="custom-input custom-focus custom-hover custom-active md:h-[44px]"
         type={type}

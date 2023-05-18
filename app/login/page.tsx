@@ -1,5 +1,5 @@
 'use client'
-
+import Link from 'next/link'
 import InputField from '@/components/InputField'
 import InputPassword from '@/components/InputPassword'
 import Logo from '@/components/Logo'
@@ -9,39 +9,57 @@ export default function Login() {
   return (
     <main className="flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-dark-violet md:px-28">
       <div className="h-[366px] max-w-[328px] rounded-lg border-black bg-white px-[34px] md:h-[425px] md:max-w-[360px]">
-        <Logo />
+        <div className="pb-5 pt-[40px] md:p-[47px] md:pb-7">
+          <Logo />
+        </div>
+
         <form>
           <InputField
             type={'email'}
-            name={'email'}
+            id={'email'}
             label={'Email'}
             placeholder={'Type your email'}
           />
           <InputPassword
-            name={'password'}
+            id={'password'}
             label={'Password'}
             placeholder={'Type your password'}
           />
           <div className="flex flex-col">
-            <input
+            <Button
               type="submit"
-              value="Log in"
-              className="custom-focus custom-active btn-hover mx-[34px] h-[44px] w-auto rounded-md border border-dark-violet bg-dark-violet font-bold text-white"
-            />
+              variant="primary"
+              size="large"
+              option="default"
+              withIcon={false}
+            >
+              Log in
+            </Button>
           </div>
         </form>
-        <div className="pt-4 text-center md:pt-9">
-          <a
+        <div className="pt-4 text-center md:pt-8">
+          <Link
             href="/forgot-password"
             className="link-focus link-hover link-active mt-10"
           >
             I forgot my password.
-          </a>
+          </Link>
         </div>
       </div>
       <div className="mt-4 h-[121px] max-w-[328px] rounded-lg border-black bg-white md:h-[130px] md:max-w-[360px]">
-        <div className="mt-5 text-center">Don&apos;t have an account?</div>
-        <Button name={'Sign Up'} link={'/signup'} />
+        <div className="m-4 text-center">Don&apos;t have an account?</div>
+        <Link href="/signup" tabIndex={-1}>
+          <div className="mx-[34px] flex flex-col">
+            <Button
+              variant="outline"
+              size="large"
+              option="default"
+              withIcon={false}
+            >
+              Sign up
+            </Button>
+          </div>
+        </Link>
       </div>
     </main>
   )

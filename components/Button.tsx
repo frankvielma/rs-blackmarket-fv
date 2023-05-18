@@ -1,11 +1,29 @@
-import Link from 'next/link'
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant: 'primary' | 'outline'
+  size: 'small' | 'large'
+  option: 'default' | 'disabled'
+  withIcon: boolean
+}
 
-export default function Button({ name = '', link = '' }) {
-  return (
-    <Link href={link} className="focus:outline-none">
-      <div className="custom-focus custom-active custom-hover btn-hover mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-dark-violet bg-white p-2 text-center font-bold text-black active:bg-hover">
-        <button className="focus:outline-none">{name}</button>
-      </div>
-    </Link>
-  )
+export default function Button({
+  variant,
+  size,
+  option,
+  withIcon,
+  ...props
+}: Props) {
+  const classbutton = `h-[44px] rounded-md border text-center font-bold 
+    ${
+      variant === 'primary'
+        ? 'bg-black text-white border-none'
+        : 'bg-white text-black border-dark-violet'
+    }
+    ${
+      option === 'disabled'
+        ? 'btn-disabled outline-none cursor-not-allowed'
+        : 'custom-active custom-focus btn-hover active:bg-hover'
+    }
+    `
+
+  return <button type="button" {...props} className={classbutton} />
 }

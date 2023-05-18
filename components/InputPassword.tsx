@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 export default function InputPassword({
-  name = '',
+  id = '',
   label = '',
   placeholder = '',
 }) {
@@ -19,7 +19,7 @@ export default function InputPassword({
       <div className="flex flex-col">
         <input
           className="custom-input custom-focus custom-hover custom-active md:h-[44px]"
-          name={name}
+          id={id}
           placeholder={placeholder}
           type={isActive ? 'password' : 'text'}
         />

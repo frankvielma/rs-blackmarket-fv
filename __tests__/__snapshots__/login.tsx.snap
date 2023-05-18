@@ -9,7 +9,7 @@ exports[`renders homepage unchanged 1`] = `
       class="h-[366px] max-w-[328px] rounded-lg border-black bg-white px-[34px] md:h-[425px] md:max-w-[360px]"
     >
       <div
-        class="pb-5 pt-[40px] md:p-[47px] md:pb-12"
+        class="pb-5 pt-[40px] md:p-[47px] md:pb-7"
       >
         <img
           alt="Black Market Logo"
@@ -36,7 +36,7 @@ exports[`renders homepage unchanged 1`] = `
           </label>
           <input
             class="custom-input custom-focus custom-hover custom-active md:h-[44px]"
-            name="email"
+            id="email"
             placeholder="Type your email"
             type="email"
           />
@@ -55,7 +55,7 @@ exports[`renders homepage unchanged 1`] = `
           >
             <input
               class="custom-input custom-focus custom-hover custom-active md:h-[44px]"
-              name="password"
+              id="password"
               placeholder="Type your password"
               type="password"
             />
@@ -79,15 +79,19 @@ exports[`renders homepage unchanged 1`] = `
         <div
           class="flex flex-col"
         >
-          <input
-            class="custom-focus custom-active btn-hover mx-[34px] h-[44px] w-auto rounded-md border border-dark-violet bg-dark-violet font-bold text-white"
+          <button
+            class="h-[44px] rounded-md border text-center font-bold 
+    bg-black text-white border-none
+    custom-active custom-focus btn-hover active:bg-hover
+    "
             type="submit"
-            value="Log in"
-          />
+          >
+            Log in
+          </button>
         </div>
       </form>
       <div
-        class="pt-4 text-center md:pt-9"
+        class="pt-4 text-center md:pt-8"
       >
         <a
           class="link-focus link-hover link-active mt-10"
@@ -101,21 +105,25 @@ exports[`renders homepage unchanged 1`] = `
       class="mt-4 h-[121px] max-w-[328px] rounded-lg border-black bg-white md:h-[130px] md:max-w-[360px]"
     >
       <div
-        class="mt-5 text-center"
+        class="m-4 text-center"
       >
         Don't have an account?
       </div>
       <a
-        class="focus:outline-none"
         href="/signup"
+        tabindex="-1"
       >
         <div
-          class="custom-focus custom-active custom-hover btn-hover mx-[34px] mt-4 h-[44px] w-auto rounded-md border border-dark-violet bg-white p-2 text-center font-bold text-black active:bg-hover"
+          class="mx-[34px] flex flex-col"
         >
           <button
-            class="focus:outline-none"
+            class="h-[44px] rounded-md border text-center font-bold 
+    bg-white text-black border-dark-violet
+    custom-active custom-focus btn-hover active:bg-hover
+    "
+            type="button"
           >
-            Sign Up
+            Sign up
           </button>
         </div>
       </a>
