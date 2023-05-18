@@ -29,9 +29,7 @@ export default function Login() {
             <Button
               type="submit"
               variant="primary"
-              size="large"
               option="default"
-              withIcon={false}
             >
               Log in
             </Button>
@@ -52,9 +50,7 @@ export default function Login() {
           <div className="mx-[34px] flex flex-col">
             <Button
               variant="outline"
-              size="large"
               option="default"
-              withIcon={false}
             >
               Sign up
             </Button>

@@ -35,9 +35,7 @@ export default function SignUp() {
         <div className="flex flex-col">
           <Button
             variant="primary"
-            size="large"
             option="disabled"
-            withIcon={false}
           >
             Sign up
           </Button>

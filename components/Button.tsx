@@ -1,17 +1,9 @@
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant: 'primary' | 'outline'
-  size: 'small' | 'large'
   option: 'default' | 'disabled'
-  withIcon: boolean
 }
 
-export default function Button({
-  variant,
-  size,
-  option,
-  withIcon,
-  ...props
-}: Props) {
+export default function Button({ variant, option, ...props }: Props) {
   const classbutton = `h-[44px] rounded-md border text-center font-bold 
     ${
       variant === 'primary'
