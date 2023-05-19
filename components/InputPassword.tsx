@@ -23,8 +23,10 @@ export default function InputPassword({
           placeholder={placeholder}
           type={isActive ? 'password' : 'text'}
         />
-        <div
-          className="absolute right-4 pt-2 md:pt-4"
+
+        <button
+          className="custom-focus absolute right-4 mt-2 md:mt-4"
+          type="button"
           onClick={toggleVisibility}
         >
           <Image
@@ -34,7 +36,7 @@ export default function InputPassword({
             width={16}
             alt=""
           />
-        </div>
+        </button>
       </div>
     </div>
   )
