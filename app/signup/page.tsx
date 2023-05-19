@@ -33,10 +33,7 @@ export default function SignUp() {
         </form>
 
         <div className="flex flex-col">
-          <Button
-            variant="primary"
-            option="disabled"
-          >
+          <Button variant="primary" option="disabled">
             Sign up
           </Button>
         </div>

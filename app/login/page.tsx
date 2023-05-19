@@ -26,11 +26,7 @@ export default function Login() {
             placeholder={'Type your password'}
           />
           <div className="flex flex-col">
-            <Button
-              type="submit"
-              variant="primary"
-              option="default"
-            >
+            <Button type="submit" variant="primary" option="default">
               Log in
             </Button>
           </div>
@@ -48,10 +44,7 @@ export default function Login() {
         <div className="m-4 text-center">Don&apos;t have an account?</div>
         <Link href="/signup" tabIndex={-1}>
           <div className="mx-[34px] flex flex-col">
-            <Button
-              variant="outline"
-              option="default"
-            >
+            <Button variant="outline" option="default">
               Sign up
             </Button>
           </div>

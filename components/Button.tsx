@@ -12,8 +12,8 @@ export default function Button({ variant, option, ...props }: Props) {
     }
     ${
       option === 'disabled'
-        ? 'btn-disabled outline-none cursor-not-allowed'
-        : 'custom-active custom-focus btn-hover active:bg-hover'
+        ? 'bg-light-gray font-bold text-dark-gray outline-none cursor-not-allowed'
+        : 'active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover'
     }
     `
 

@@ -22,42 +22,11 @@ body {
   font-size: 1.5em;
 }
 
-.custom-input {
-  @apply h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray;
-}
-
-.custom-hover {
-  @apply hover:border-hover;
-}
-
 .custom-focus {
   @apply focus-within:rounded focus-within:outline-dashed focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-focus;
 }
 
-.custom-active {
-  @apply active:outline-double active:outline-2 active:outline-offset-0 active:outline-active-outline;
-}
-
-.btn-hover {
-  @apply hover:bg-hover;
-}
-
-.btn-standard {
-  @apply border-dark-violet bg-dark-violet font-bold text-white;
-}
-
-.btn-disabled {
-  @apply bg-light-gray font-bold text-dark-gray;
-}
-
 /* Links with states */
-.link-default {
-  @apply text-links;
-}
-
-.link-disabled {
-  @apply text-dark-gray;
-}
 
 .link-hover {
   @apply hover:text-links hover:underline;
@@ -69,8 +38,4 @@ body {
 
 .link-active {
   @apply active:font-bold active:text-active;
-}
-
-.link-disabled {
-  @apply font-normal text-dark-gray;
 }

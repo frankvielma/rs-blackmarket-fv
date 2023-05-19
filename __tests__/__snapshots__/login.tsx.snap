@@ -35,7 +35,7 @@ exports[`renders homepage unchanged 1`] = `
             Email
           </label>
           <input
-            class="custom-input custom-focus custom-hover custom-active md:h-[44px]"
+            class="custom-focus h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray hover:border-hover active:outline-none active:ring-2 active:ring-offset-2 md:h-[44px]"
             id="email"
             placeholder="Type your email"
             type="email"
@@ -54,7 +54,7 @@ exports[`renders homepage unchanged 1`] = `
             class="flex flex-col"
           >
             <input
-              class="custom-input custom-focus custom-hover custom-active md:h-[44px]"
+              class="custom-focus h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray hover:border-hover active:outline-none active:ring-2 active:ring-offset-2 md:h-[44px]"
               id="password"
               placeholder="Type your password"
               type="password"
@@ -82,7 +82,7 @@ exports[`renders homepage unchanged 1`] = `
           <button
             class="h-[44px] rounded-md border text-center font-bold 
     bg-black text-white border-none
-    custom-active custom-focus btn-hover active:bg-hover
+    active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover
     "
             type="submit"
           >
@@ -119,7 +119,7 @@ exports[`renders homepage unchanged 1`] = `
           <button
             class="h-[44px] rounded-md border text-center font-bold 
     bg-white text-black border-dark-violet
-    custom-active custom-focus btn-hover active:bg-hover
+    active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover
     "
             type="button"
           >
