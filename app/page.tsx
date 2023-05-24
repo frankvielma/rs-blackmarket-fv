@@ -10,8 +10,10 @@ export default function Home() {
       <div className="mt-16">
         <Image
           src="/images/rs_logo.png"
-          height={162}
-          width={162}
+          height={0}
+          width={0}
+          sizes="100vw"
+          className="w-full h-auto"
           alt="Rs Logo"
         />
       </div>

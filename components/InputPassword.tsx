@@ -30,10 +30,11 @@ export default function InputPassword({
           onClick={toggleVisibility}
         >
           <Image
-            className="w-4"
             src={`/icons/visibility_${isActive ? 'off' : 'on'}.svg`}
-            height={16}
-            width={16}
+            height={0}
+            width={0}
+            sizes="100vw"
+            className="w-4 h-auto"
             alt=""
           />
         </button>

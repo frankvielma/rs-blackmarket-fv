@@ -3,10 +3,11 @@ import Image from 'next/image'
 export default function Logo() {
   return (
     <Image
-      className="m-auto"
       src="/images/bm_logo.png"
-      height={173}
-      width={173}
+      height={0}
+      width={0}
+      sizes="100vw"
+      className="w-full h-auto"
       alt="Black Market Logo"
     />
   )
