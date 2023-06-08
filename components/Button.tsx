@@ -1,6 +1,6 @@
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant: 'primary' | 'outline'
-  option: 'default' | 'disabled'
+  option: boolean
 }
 
 export default function Button({ variant, option, ...props }: Props) {
@@ -11,7 +11,7 @@ export default function Button({ variant, option, ...props }: Props) {
         : 'bg-white text-black border-dark-violet'
     }
     ${
-      option === 'disabled'
+      option === true
         ? 'bg-light-gray font-bold text-dark-gray outline-none cursor-not-allowed'
         : 'active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover'
     }

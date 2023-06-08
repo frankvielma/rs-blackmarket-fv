@@ -4,8 +4,28 @@ import InputField from '@/components/InputField'
 import InputPassword from '@/components/InputPassword'
 import Logo from '@/components/Logo'
 import Button from '@/components/Button'
+import { useState } from 'react'
 
 export default function SignUp() {
+  const [password, setPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
+
+  const passwordsMatch = password === confirmPassword && password !== ''
+
+  const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(event.target.value)
+  }
+
+  const handleConfirmPasswordChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setConfirmPassword(event.target.value)
+  }
+
+  const handleSubmit = () => {
+    //event.preventDefault()
+  }
+
   return (
     <main className="flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-dark-violet md:px-28">
       <div className="h-[496px] max-w-[328px] rounded-lg border-black bg-white px-[34px] md:h-[572px] md:max-w-[360px]">
@@ -13,7 +33,7 @@ export default function SignUp() {
           <Logo />
         </div>
 
-        <form>
+        <form onSubmit={handleSubmit}>
           <InputField
             type={'email'}
             id={'email'}
@@ -24,19 +44,25 @@ export default function SignUp() {
             id={'password1'}
             label={'Password'}
             placeholder={'Type your password'}
+            onChange={handlePasswordChange}
           />
           <InputPassword
             id={'password2'}
             label={'Confirm password'}
             placeholder={'Confirm your password'}
+            onChange={handleConfirmPasswordChange}
           />
-        </form>
 
-        <div className="flex flex-col">
-          <Button variant="primary" option="disabled">
-            Sign up
-          </Button>
-        </div>
+          <div className="flex flex-col">
+            <Button
+              variant="primary"
+              option={!passwordsMatch}
+              onClick={handleSubmit}
+            >
+              Sign up
+            </Button>
+          </div>
+        </form>
 
         <div className="mt-5 text-center">
           By signing up, you accept the{' '}
