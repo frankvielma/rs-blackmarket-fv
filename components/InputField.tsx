@@ -1,9 +1,25 @@
+import Image from 'next/image'
+import { useState } from 'react'
+
 export default function InputField({
   type = '',
   id = '',
   label = '',
   placeholder = '',
 }) {
+  const [validationMessage, setValidationMessage] = useState('')
+
+  const handleBlur = (event: React.FocusEvent<HTMLInputElement>) => {
+    const input = event.target
+    if (!input.validity.patternMismatch) {
+      input.setCustomValidity('')
+    }
+    setValidationMessage(input.validationMessage)
+  }
+
+  const cssStyle =
+    'custom-focus h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray hover:border-hover active:outline-none active:ring-2 active:ring-offset-2 md:h-[44px]'
+
   return (
     <div className="my-4 flex flex-col">
       <label htmlFor={type} className="text-sm md:text-base">
@@ -12,9 +28,30 @@ export default function InputField({
       <input
         id={id}
         placeholder={placeholder}
-        className="custom-focus h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray hover:border-hover active:outline-none active:ring-2 active:ring-offset-2 md:h-[44px]"
+        className={`border ${
+          validationMessage ? 'border-red-600 ' + cssStyle : cssStyle
+        }`}
         type={type}
+        required={true}
+        onBlur={handleBlur}
       />
+
+      {validationMessage ? (
+        <div className="flex flex-row">
+          <div className="">
+            <Image
+              src="/icons/Exclude.svg"
+              height={0}
+              width={0}
+              className="w-full pr-1 pt-1"
+              alt=""
+            />
+          </div>
+          <div> {validationMessage}</div>
+        </div>
+      ) : (
+        <span></span>
+      )}
     </div>
   )
 }
