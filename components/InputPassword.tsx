@@ -5,7 +5,9 @@ export default function InputPassword({
   id = '',
   label = '',
   placeholder = '',
-  onChange = (event: ChangeEvent<HTMLInputElement>): void => { event }
+  onChange = (event: ChangeEvent<HTMLInputElement>): void => {
+    event
+  },
   //onChange = (): void => { }
 }) {
   const [isActive, setActive] = useState(true)
@@ -24,7 +26,9 @@ export default function InputPassword({
           id={id}
           placeholder={placeholder}
           type={isActive ? 'password' : 'text'}
-          onChange={onChange} 
+          onChange={onChange}
+          pattern=".{8,}"
+          required={true}
         />
 
         <button

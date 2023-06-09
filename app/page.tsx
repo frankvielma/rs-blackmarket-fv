@@ -13,7 +13,7 @@ export default function Home() {
           height={0}
           width={0}
           sizes="100vw"
-          className="w-full h-auto"
+          className="h-auto w-full"
           alt="Rs Logo"
         />
       </div>

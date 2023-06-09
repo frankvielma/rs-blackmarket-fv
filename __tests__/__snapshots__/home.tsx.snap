@@ -10,7 +10,7 @@ exports[`Home renders homepage unchanged 1`] = `
     >
       <img
         alt="Rs Logo"
-        class="w-full h-auto"
+        class="h-auto w-full"
         data-nimg="1"
         decoding="async"
         height="0"

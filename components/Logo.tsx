@@ -7,7 +7,7 @@ export default function Logo() {
       height={0}
       width={0}
       sizes="100vw"
-      className="w-full h-auto"
+      className="h-auto w-full"
       alt="Black Market Logo"
     />
   )
