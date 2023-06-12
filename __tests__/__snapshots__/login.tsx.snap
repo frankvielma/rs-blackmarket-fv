@@ -38,6 +38,7 @@ exports[`renders homepage unchanged 1`] = `
           <input
             class="border custom-focus h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray hover:border-hover active:outline-none active:ring-2 active:ring-offset-2 md:h-[44px]"
             id="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
             placeholder="Type your email"
             required=""
             type="email"

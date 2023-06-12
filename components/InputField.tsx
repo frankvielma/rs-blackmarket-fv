@@ -33,6 +33,9 @@ export default function InputField({
         }`}
         type={type}
         required={true}
+        pattern={
+          type === 'email' ? '[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$' : undefined
+        }
         onBlur={handleBlur}
       />
 
