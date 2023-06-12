@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, ChangeEvent } from 'react'
 
 export default function InputPassword({
   id = '',
   label = '',
   placeholder = '',
-  onChange = (): void => {
-    // do nothing
+  onChange = (event: ChangeEvent<HTMLInputElement>): void => {
+    event
   },
 }) {
   const [isActive, setActive] = useState(true)
