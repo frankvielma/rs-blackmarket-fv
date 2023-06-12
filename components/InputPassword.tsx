@@ -1,14 +1,13 @@
 import Image from 'next/image'
-import { useState, ChangeEvent } from 'react'
+import { useState } from 'react'
 
 export default function InputPassword({
   id = '',
   label = '',
   placeholder = '',
-  onChange = (event: ChangeEvent<HTMLInputElement>): void => {
-    event
+  onChange = (): void => {
+    // do nothing
   },
-  //onChange = (): void => { }
 }) {
   const [isActive, setActive] = useState(true)
   const toggleVisibility = () => {
