@@ -58,13 +58,14 @@ exports[`renders homepage unchanged 1`] = `
             class="flex flex-col"
           >
             <input
-              class="custom-focus h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray hover:border-hover active:outline-none active:ring-2 active:ring-offset-2 md:h-[44px]"
+              class="border custom-focus h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray hover:border-hover active:outline-none active:ring-2 active:ring-offset-2 md:h-[44px]"
               id="password"
               pattern=".{8,}"
               placeholder="Type your password"
               required=""
               type="password"
             />
+            <span />
             <button
               class="custom-focus absolute right-4 mt-2 md:mt-4"
               type="button"
