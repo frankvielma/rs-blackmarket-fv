@@ -1,11 +1,14 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, ChangeEvent } from 'react'
 
 export default function InputField({
   type = '',
   id = '',
   label = '',
   placeholder = '',
+  onChange = (event: ChangeEvent<HTMLInputElement>): void => {
+    event
+  },
 }) {
   const [validationMessage, setValidationMessage] = useState('')
 
@@ -37,6 +40,7 @@ export default function InputField({
           type === 'email' ? '[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$' : undefined
         }
         onBlur={handleBlur}
+        onChange={onChange}
       />
 
       {validationMessage ? (

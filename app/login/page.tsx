@@ -4,8 +4,25 @@ import InputField from '@/components/InputField'
 import InputPassword from '@/components/InputPassword'
 import Logo from '@/components/Logo'
 import Button from '@/components/Button'
+import { useState } from 'react'
 
 export default function Login() {
+  const [isValidEmail, setIsValid] = useState(true)
+  const [isValidPassword, setPassword] = useState(false)
+  const validForm = isValidPassword == true && isValidEmail == true
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setIsValid(event.target.checkValidity())
+  }
+
+  const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(event.target.checkValidity())
+  }
+
+  const handleSubmit = () => {
+    //event.preventDefault()
+  }
+
   return (
     <main className="flex h-[100vh] flex-col bg-[url('/images/bm_wallpaper.jpg')] bg-cover bg-center bg-no-repeat px-6 py-16 text-base text-dark-violet md:px-28">
       <div className="h-[366px] max-w-[328px] rounded-lg border-black bg-white px-[34px] md:h-[425px] md:max-w-[360px]">
@@ -13,20 +30,22 @@ export default function Login() {
           <Logo />
         </div>
 
-        <form>
+        <form onSubmit={handleSubmit}>
           <InputField
             type={'email'}
             id={'email'}
             label={'Email'}
             placeholder={'Type your email'}
+            onChange={handleEmailChange}
           />
           <InputPassword
             id={'password'}
             label={'Password'}
             placeholder={'Type your password'}
+            onChange={handlePasswordChange}
           />
           <div className="flex flex-col">
-            <Button type="submit" variant="primary" option="default">
+            <Button type="submit" variant="primary" option={!validForm}>
               Log in
             </Button>
           </div>
@@ -44,7 +63,7 @@ export default function Login() {
         <div className="m-4 text-center">Don&apos;t have an account?</div>
         <Link href="/signup" tabIndex={-1}>
           <div className="mx-[34px] flex flex-col">
-            <Button variant="outline" option="default">
+            <Button variant="outline" option={false}>
               Sign up
             </Button>
           </div>

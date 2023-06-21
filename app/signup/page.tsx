@@ -9,20 +9,34 @@ import { useState } from 'react'
 export default function SignUp() {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
+  const [isValidEmail, setIsValid] = useState(true)
+  const [isValidPassword, setIsValidPassword] = useState(false)
+  const [isValidConfirmPassword, setIsValidConfirmPassword] = useState(false)
 
-  const passwordsMatch = password === confirmPassword && password !== ''
+  const validForm =
+    password === confirmPassword &&
+    isValidPassword == true &&
+    isValidConfirmPassword == true &&
+    isValidEmail == true
 
   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(event.target.value)
+    setIsValidPassword(event.target.checkValidity())
   }
 
   const handleConfirmPasswordChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     setConfirmPassword(event.target.value)
+    setIsValidConfirmPassword(event.target.checkValidity())
   }
 
-  const handleSubmit = () => {
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setIsValid(event.target.checkValidity())
+  }
+
+  const handleSubmit = (event: React.FormEvent) => {
+    console.log(event.target)
     //event.preventDefault()
   }
 
@@ -39,6 +53,7 @@ export default function SignUp() {
             id={'email'}
             label={'Email'}
             placeholder={'Type your email'}
+            onChange={handleEmailChange}
           />
           <InputPassword
             id={'password1'}
@@ -56,7 +71,7 @@ export default function SignUp() {
           <div className="flex flex-col">
             <Button
               variant="primary"
-              option={!passwordsMatch}
+              option={!validForm}
               onClick={handleSubmit}
             >
               Sign up
