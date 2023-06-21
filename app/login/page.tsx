@@ -6,15 +6,32 @@ import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import { useState } from 'react'
 
+/**
+ * Renders the login form and manages its state.
+ *
+ * @return {JSX.Element} The login form.
+ */
 export default function Login() {
   const [isValidEmail, setIsValid] = useState(true)
   const [isValidPassword, setPassword] = useState(false)
   const validForm = isValidPassword == true && isValidEmail == true
 
+  /**
+ * Handles the change event for the email input field.
+ *
+ * @param {React.ChangeEvent<HTMLInputElement>} event - The event object.
+ * @return {void} This function does not return anything.
+ */
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setIsValid(event.target.checkValidity())
   }
 
+/**
+ * Handles the change in the password input field by updating the password state
+ *
+ * @param {React.ChangeEvent<HTMLInputElement>} event - the event triggered by a change in the password input field
+ * @return {void} This function does not return anything
+ */
   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(event.target.checkValidity())
   }

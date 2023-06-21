@@ -1,6 +1,15 @@
 import Image from 'next/image'
 import { useState, ChangeEvent } from 'react'
 
+/**
+ * Renders a password input field with a label and validation message.
+ *
+ * @param {string} id - The ID of the input element.
+ * @param {string} label - The label text for the input element.
+ * @param {string} placeholder - The placeholder text for the input element.
+ * @param {function} onChange - The callback function to handle input change.
+ * @return {JSX.Element} The password input field with label and validation message.
+ */
 export default function InputPassword({
   id = '',
   label = '',

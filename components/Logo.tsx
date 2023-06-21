@@ -1,5 +1,10 @@
 import Image from 'next/image'
 
+/**
+ * Renders the Black Market logo as an Image component.
+ *
+ * @return {JSX.Element} The Black Market logo as an Image component.
+ */
 export default function Logo() {
   return (
     <Image

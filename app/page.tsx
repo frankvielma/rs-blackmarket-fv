@@ -2,6 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { inter } from '@/components/fonts'
 
+/**
+ * Renders the Home component with the UI for the Black Market landing page.
+ *
+ * @return {JSX.Element} The Home component UI.
+ */
 export default function Home() {
   return (
     <main

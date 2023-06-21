@@ -6,6 +6,13 @@ import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import { useState } from 'react'
 
+/**
+ * Renders a sign-up page with email, password and confirm password inputs. Validates input and enables the 
+ * sign-up button only if all inputs are valid and passwords match. Includes links to the Data Policy and 
+ * Cookies Policy pages. 
+ *
+ * @return {JSX.Element} A sign-up page with input fields and links.
+ */
 export default function SignUp() {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
@@ -19,11 +26,23 @@ export default function SignUp() {
     isValidConfirmPassword == true &&
     isValidEmail == true
 
+  /**
+   * Updates the password state when user types in the input field and
+   * updates the validation state based on the input's validity.
+   *
+   * @param {React.ChangeEvent<HTMLInputElement>} event - The event object from the input field
+   * @return {void} This function does not return anything
+   */
   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(event.target.value)
     setIsValidPassword(event.target.checkValidity())
   }
 
+    /**
+   * Updates the confirm password state and its validity based on the given input change event.
+   *
+   * @param {React.ChangeEvent<HTMLInputElement>} event - The change event of the input element.
+   */
   const handleConfirmPasswordChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
@@ -31,6 +50,11 @@ export default function SignUp() {
     setIsValidConfirmPassword(event.target.checkValidity())
   }
 
+    /**
+   * Updates the isValid state based on the validity of the email input field.
+   *
+   * @param {React.ChangeEvent<HTMLInputElement>} event - The input change event.
+   */
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setIsValid(event.target.checkValidity())
   }

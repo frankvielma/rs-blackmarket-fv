@@ -1,6 +1,16 @@
 import Image from 'next/image'
 import { useState, ChangeEvent } from 'react'
 
+/**
+ * Renders a custom input field with label, validation, and styling options
+ *
+ * @param {string} type - the type of input field (e.g. 'text', 'email')
+ * @param {string} id - the id of the input field
+ * @param {string} label - the label for the input field
+ * @param {string} placeholder - the placeholder text for the input field
+ * @param {function} onChange - the function to call when the input field changes
+ * @return {JSX.Element} the custom input field component
+ */
 export default function InputField({
   type = '',
   id = '',
