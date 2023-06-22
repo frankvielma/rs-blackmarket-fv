@@ -5,20 +5,23 @@ import InputPassword from '@/components/InputPassword'
 import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 /**
- * Renders a sign-up page with email, password and confirm password inputs. Validates input and enables the 
- * sign-up button only if all inputs are valid and passwords match. Includes links to the Data Policy and 
- * Cookies Policy pages. 
+ * Renders a sign up form with input fields for email, password and confirm password,
+ * and a submit button. Validates the form input and sends a POST request to register a new user.
  *
- * @return {JSX.Element} A sign-up page with input fields and links.
+ * @return {JSX.Element} A JSX element with the sign up form.
  */
 export default function SignUp() {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
+  const [email, setEmail] = useState('')
   const [isValidEmail, setIsValid] = useState(true)
   const [isValidPassword, setIsValidPassword] = useState(false)
   const [isValidConfirmPassword, setIsValidConfirmPassword] = useState(false)
+  const [responseData, setResponseData] = useState({})
+  const router = useRouter()
 
   const validForm =
     password === confirmPassword &&
@@ -38,7 +41,7 @@ export default function SignUp() {
     setIsValidPassword(event.target.checkValidity())
   }
 
-    /**
+  /**
    * Updates the confirm password state and its validity based on the given input change event.
    *
    * @param {React.ChangeEvent<HTMLInputElement>} event - The change event of the input element.
@@ -50,18 +53,49 @@ export default function SignUp() {
     setIsValidConfirmPassword(event.target.checkValidity())
   }
 
-    /**
+  /**
    * Updates the isValid state based on the validity of the email input field.
    *
    * @param {React.ChangeEvent<HTMLInputElement>} event - The input change event.
    */
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value)
     setIsValid(event.target.checkValidity())
   }
 
+    /**
+   * Handles the submission of a form that contains user registration data.
+   *
+   * @param {React.FormEvent} event - The event that triggered the form submission.
+   * @return {void} This function does not return anything.
+   */
   const handleSubmit = (event: React.FormEvent) => {
-    console.log(event.target)
-    //event.preventDefault()
+    event.preventDefault()
+
+    const data = {
+      email: email,
+      password1: password,
+      password2: confirmPassword,
+    }
+
+    fetch(
+      'https://black-market-juan-rs.herokuapp.com/dj-rest-auth/registration/',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (Object.values(data)[0] === 'Verification e-mail sent.') {
+          router.push('/login')
+        }
+        setResponseData(data)
+      })
+      .catch((error) => console.error('Error: ', error))
   }
 
   return (
@@ -101,6 +135,7 @@ export default function SignUp() {
               Sign up
             </Button>
           </div>
+          <span className="text-red-700">{Object.values(responseData)}</span>
         </form>
 
         <div className="mt-5 text-center">
