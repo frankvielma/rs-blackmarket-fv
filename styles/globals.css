@@ -1,14 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  html {
-    font-family: DMSans;
-  }
-}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -26,5 +18,24 @@
 
 body {
   background-color: black;
+  color: white;
   font-size: 1.5em;
+}
+
+.custom-focus {
+  @apply focus-within:rounded focus-within:outline-dashed focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-focus;
+}
+
+/* Links with states */
+
+.link-hover {
+  @apply hover:text-links hover:underline;
+}
+
+.link-focus {
+  @apply custom-focus font-bold text-focus;
+}
+
+.link-active {
+  @apply active:font-bold active:text-active;
 }

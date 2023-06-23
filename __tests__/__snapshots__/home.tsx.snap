@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders homepage unchanged 1`] = `
+<div>
+  <main
+    class="flex flex-col items-center text-center text-white className"
+  >
+    <div
+      class="mt-16"
+    >
+      <img
+        alt="Rs Logo"
+        class="h-auto w-full"
+        data-nimg="1"
+        decoding="async"
+        height="0"
+        loading="lazy"
+        sizes="100vw"
+        src="/_next/image?url=%2Fimages%2Frs_logo.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Fimages%2Frs_logo.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Frs_logo.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Frs_logo.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Frs_logo.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Frs_logo.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Frs_logo.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Frs_logo.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Frs_logo.png&w=3840&q=75 3840w"
+        style="color: transparent;"
+        width="0"
+      />
+    </div>
+    <div
+      class="mt-20 text-5xl font-semibold sm:text-[6.25rem]"
+    >
+      Black Market
+    </div>
+    <div
+      class="mt-20 rounded-xl bg-[#FA2D83] p-9 py-6 text-[3.4rem] sm:text-5xl"
+    >
+      UI
+    </div>
+    <a
+      class="mt-16 hover:text-links hover:underline focus:rounded-lg focus:border-2 focus:border-dashed focus:border-focus focus:px-3 focus:outline-none active:text-active"
+      href="/login"
+    >
+      Login / SignUp
+    </a>
+    <div
+      class="mt-20 text-2xl"
+    >
+      Collaborators
+    </div>
+    <div
+      class="mt-10 w-16 bg-[url('/images/bg_collaborator.png')] bg-no-repeat p-4 text-2xl font-semibold text-black"
+    >
+      FV
+    </div>
+  </main>
+</div>
+`;

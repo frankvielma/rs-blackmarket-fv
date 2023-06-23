@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import Home from '@/pages/index'
+import Home from '@/app/page'
 
 describe('Home', () => {
   it('renders black market', () => {
@@ -15,5 +15,9 @@ describe('Home', () => {
       const title = screen.getByText(/collaborators/i)
 
       expect(title).toBeInTheDocument()
+    }),
+    it('renders homepage unchanged', () => {
+      const { container } = render(<Home />)
+      expect(container).toMatchSnapshot()
     })
 })
