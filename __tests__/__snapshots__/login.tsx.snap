@@ -70,6 +70,11 @@ exports[`renders login unchanged 1`] = `
               class="custom-focus absolute right-4 mt-2 md:mt-4"
               type="button"
             >
+              <span
+                class="sr-only"
+              >
+                Show password
+              </span>
               <img
                 alt=""
                 class="h-auto w-4"

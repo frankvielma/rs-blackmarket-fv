@@ -77,6 +77,7 @@ export default function InputPassword({
           type="button"
           onClick={toggleVisibility}
         >
+          <span className="sr-only">Show password</span>
           <Image
             src={`/icons/visibility_${isActive ? 'off' : 'on'}.svg`}
             height={0}

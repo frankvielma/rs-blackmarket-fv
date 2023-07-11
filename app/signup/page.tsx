@@ -63,7 +63,7 @@ export default function SignUp() {
     setIsValid(event.target.checkValidity())
   }
 
-    /**
+  /**
    * Handles the submission of a form that contains user registration data.
    *
    * @param {React.FormEvent} event - The event that triggered the form submission.
