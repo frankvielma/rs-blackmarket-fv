@@ -84,7 +84,7 @@ export default function InputPassword({
             width={0}
             sizes="100vw"
             className="h-auto w-4"
-            alt=""
+            alt="Visibility"
           />
         </button>
       </div>

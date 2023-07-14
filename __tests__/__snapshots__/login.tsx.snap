@@ -81,7 +81,7 @@ exports[`Login renders login unchanged 1`] = `
                 Show password
               </span>
               <img
-                alt=""
+                alt="Visibility"
                 class="h-auto w-4"
                 data-nimg="1"
                 decoding="async"
