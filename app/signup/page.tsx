@@ -91,7 +91,9 @@ export default function SignUp() {
       .then((response) => response.json())
       .then((data) => {
         if (Object.values(data)[0] === 'Verification e-mail sent.') {
-          router.push('/login')
+          setTimeout(() => {
+            router.push('/login')
+          }, 2000)
         }
         setResponseData(data)
       })
