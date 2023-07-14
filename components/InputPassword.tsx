@@ -38,7 +38,7 @@ export default function InputPassword({
 
   return (
     <div className="relative my-4">
-      <label htmlFor="password" className="text-sm md:text-base">
+      <label htmlFor={id} className="text-sm md:text-base">
         {label}
       </label>
       <div className="flex flex-col">
