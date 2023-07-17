@@ -27,7 +27,7 @@ describe('Signup', () => {
         'active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover'
       )
     }),
-    it('It should display the message Verification e-mail as soon as the form has been filled out correctly and the data has been retrieved.', async () => {
+    it('should display the message Verification e-mail as soon as the form has been filled out correctly and the data has been retrieved.', async () => {
       const mockResponse = ['Verification e-mail sent.']
       fetch = jest.fn(() =>
         Promise.resolve({
