@@ -24,7 +24,9 @@ describe('Login', () => {
       )
     }),
     it('should display the error message if the form is invalid.', async () => {
-      const mockResponse = ['Unable to log in with provided credentials.']
+      const mockResponse = {
+        non_field_errors: 'Unable to log in with provided credentials.',
+      }
       fetch = jest.fn(() =>
         Promise.resolve({
           json: () => Promise.resolve(mockResponse),
@@ -45,7 +47,7 @@ describe('Login', () => {
 
       await waitFor(async () => {
         expect(
-          screen.getByText('Unable to log in with provided credentials.')
+          screen.getByText('Your email or password are incorrect.')
         ).toBeInTheDocument()
       })
     })

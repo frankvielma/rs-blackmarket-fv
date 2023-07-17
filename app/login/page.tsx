@@ -62,6 +62,12 @@ export default function Login() {
         if (data['access_token'] !== undefined) {
           router.push('/dashboard')
         } else {
+          if (
+            data['non_field_errors'] ==
+            'Unable to log in with provided credentials.'
+          ) {
+            data['non_field_errors'] = 'Your email or password are incorrect.'
+          }
           setResponseData(data)
         }
       })
@@ -95,9 +101,11 @@ export default function Login() {
               Log in
             </Button>
           </div>
-          <span className="text-red-700">{Object.values(responseData)}</span>
         </form>
-        <div className="pt-4 text-center md:pt-8">
+        <div className="pt-2 text-red-700 md:pt-4">
+          {Object.values(responseData)}
+        </div>
+        <div className="pt-2 text-center md:pt-4">
           <Link
             href="/forgot-password"
             className="link-focus link-hover link-active mt-10"
