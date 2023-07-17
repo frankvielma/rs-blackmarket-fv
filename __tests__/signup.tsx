@@ -5,10 +5,6 @@ jest.mock('next/navigation', () => ({
   useRouter: jest.fn(),
 }))
 
-const router = {
-  push: jest.fn(),
-}
-
 describe('Signup', () => {
   it('renders signup unchanged', () => {
     const { container } = render(<Signup />)
@@ -31,9 +27,8 @@ describe('Signup', () => {
         'active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover'
       )
     }),
-    it('It should redirect to the login page, as soon as the form has been filled out correctly and the data has been retrieved.', () => {
+    it('It should display the message Verification e-mail as soon as the form has been filled out correctly and the data has been retrieved.', async () => {
       const mockResponse = ['Verification e-mail sent.']
-
       fetch = jest.fn(() =>
         Promise.resolve({
           json: () => Promise.resolve(mockResponse),
@@ -54,14 +49,10 @@ describe('Signup', () => {
 
       fireEvent.click(buttonElement)
 
-      waitFor(
-        () => {
-          expect(
-            screen.getByText('Verification e-mail sent.')
-          ).toBeInTheDocument()
-          expect(router.push).toHaveBeenCalledWith('/login')
-        },
-        { timeout: 2100 }
-      )
+      await waitFor(async () => {
+        expect(
+          screen.getByText('Verification e-mail sent.')
+        ).toBeInTheDocument()
+      })
     })
 })
