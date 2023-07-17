@@ -107,6 +107,9 @@ exports[`Login renders login unchanged 1`] = `
             Log in
           </button>
         </div>
+        <span
+          class="text-red-700"
+        />
       </form>
       <div
         class="pt-4 text-center md:pt-8"

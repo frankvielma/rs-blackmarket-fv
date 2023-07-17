@@ -5,6 +5,7 @@ import InputPassword from '@/components/InputPassword'
 import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 /**
  * Renders the login form and manages its state.
@@ -13,8 +14,12 @@ import { useState } from 'react'
  */
 export default function Login() {
   const [isValidEmail, setIsValid] = useState(true)
-  const [isValidPassword, setPassword] = useState(false)
+  const [isValidPassword, setIsValidPassword] = useState(false)
   const validForm = isValidPassword == true && isValidEmail == true
+  const [responseData, setResponseData] = useState({})
+  const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('')
+  const router = useRouter()
 
   /**
    * Handles the change event for the email input field.
@@ -23,6 +28,7 @@ export default function Login() {
    * @return {void} This function does not return anything.
    */
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value)
     setIsValid(event.target.checkValidity())
   }
 
@@ -33,11 +39,33 @@ export default function Login() {
    * @return {void} This function does not return anything
    */
   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setPassword(event.target.checkValidity())
+    setPassword(event.target.value)
+    setIsValidPassword(event.target.checkValidity())
   }
 
-  const handleSubmit = () => {
-    //event.preventDefault()
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault()
+    const data = {
+      email: email,
+      password: password,
+    }
+
+    fetch('https://black-market-juan-rs.herokuapp.com/dj-rest-auth/login/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data['access_token'] !== undefined) {
+          router.push('/dashboard')
+        } else {
+          setResponseData(data)
+        }
+      })
+      .catch((error) => console.error('Error: ', error))
   }
 
   return (
@@ -67,6 +95,7 @@ export default function Login() {
               Log in
             </Button>
           </div>
+          <span className="text-red-700">{Object.values(responseData)}</span>
         </form>
         <div className="pt-4 text-center md:pt-8">
           <Link
