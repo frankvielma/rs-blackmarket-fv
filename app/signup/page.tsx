@@ -69,7 +69,7 @@ export default function SignUp() {
    * @param {React.FormEvent} event - The event that triggered the form submission.
    * @return {void} This function does not return anything.
    */
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
 
     const data = {
@@ -78,7 +78,7 @@ export default function SignUp() {
       password2: confirmPassword,
     }
 
-    fetch(
+    await fetch(
       'https://black-market-juan-rs.herokuapp.com/dj-rest-auth/registration/',
       {
         method: 'POST',

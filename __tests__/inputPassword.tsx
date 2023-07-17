@@ -22,8 +22,8 @@ describe('InputPassword', () => {
     }),
     it('calls onClick and updates the visibility icon', () => {
       render(<InputPassword label={'Password'} id={'password'} />)
-      const imgElement = screen.getByAltText('Visibility');
+      const imgElement = screen.getByAltText('Visibility')
       fireEvent.click(imgElement)
-      expect(imgElement).toHaveAttribute('src', '/icons/visibility_on.svg');
+      expect(imgElement).toHaveAttribute('src', '/icons/visibility_on.svg')
     })
 })
