@@ -9,14 +9,6 @@ const router = {
   push: jest.fn(),
 }
 
-const mockResponse = ['Verification e-mail sent.']
-
-global.fetch = jest.fn(() =>
-  Promise.resolve({
-    json: () => Promise.resolve(mockResponse),
-  })
-)
-
 describe('Signup', () => {
   it('renders signup unchanged', () => {
     const { container } = render(<Signup />)
@@ -39,7 +31,14 @@ describe('Signup', () => {
         'active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover'
       )
     }),
-    it('displays fetched data', () => {
+    it('It should redirect to the login page, as soon as the form has been filled out correctly and the data has been retrieved.', () => {
+      const mockResponse = ['Verification e-mail sent.']
+
+      fetch = jest.fn(() =>
+        Promise.resolve({
+          json: () => Promise.resolve(mockResponse),
+        })
+      )
       render(<Signup />)
       const emailInput = screen.getByLabelText('Email')
       const passwordInput = screen.getByLabelText('Password')
