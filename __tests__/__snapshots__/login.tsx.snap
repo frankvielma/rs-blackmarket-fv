@@ -109,7 +109,10 @@ exports[`Login renders login unchanged 1`] = `
         </div>
       </form>
       <div
-        class="pt-4 text-center md:pt-8"
+        class="pt-2 text-red-700 md:pt-4"
+      />
+      <div
+        class="pt-2 text-center md:pt-4"
       >
         <a
           class="link-focus link-hover link-active mt-10"
