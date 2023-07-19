@@ -1,4 +1,4 @@
-import Logo from '@/components/Logo'
+import LogoHeader from '@/components/LogoHeader'
 import { deleteCookie } from 'cookies-next'
 import { useRouter } from 'next/navigation'
 import { Dropdown } from 'flowbite-react'
@@ -15,7 +15,7 @@ export default function Header() {
     <header className="h-14 w-screen bg-black px-4 lg:h-24">
       <div className="mx-auto flex h-14 items-center justify-between px-4 lg:h-24">
         <div>
-          <Logo source="bm_logo2" />
+          <LogoHeader />
         </div>
         <div className="hidden lg:block">
           <input

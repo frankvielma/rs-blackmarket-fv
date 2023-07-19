@@ -81,7 +81,7 @@ export default function Login() {
       <div className="h-[366px] max-w-[328px] rounded-lg border-black bg-white px-[34px] md:h-[425px] md:max-w-[360px]">
         <h1 className="sr-only">Login</h1>
         <div className="pb-5 pt-[40px] md:p-[47px] md:pb-7">
-          <Logo source="bm_logo" />
+          <Logo />
         </div>
 
         <form onSubmit={handleSubmit}>
