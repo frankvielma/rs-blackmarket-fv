@@ -6,6 +6,7 @@ import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { setCookie } from 'cookies-next'
 
 /**
  * Renders the login form and manages its state.
@@ -60,6 +61,7 @@ export default function Login() {
       .then((response) => response.json())
       .then((data) => {
         if (data['access_token'] !== undefined) {
+          setCookie('access_token', data.access_token)
           router.push('/dashboard')
         } else {
           if (
@@ -79,7 +81,7 @@ export default function Login() {
       <div className="h-[366px] max-w-[328px] rounded-lg border-black bg-white px-[34px] md:h-[425px] md:max-w-[360px]">
         <h1 className="sr-only">Login</h1>
         <div className="pb-5 pt-[40px] md:p-[47px] md:pb-7">
-          <Logo />
+        <Logo source="bm_logo" />
         </div>
 
         <form onSubmit={handleSubmit}>
