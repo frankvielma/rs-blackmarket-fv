@@ -1,32 +1,59 @@
+import classnames from 'classnames'
+
+export enum Variants {
+  Primary = 'primary',
+  Outline = 'outline',
+}
+
+export enum Sizes {
+  Default = 'default',
+  Small = 'small',
+  Medium = 'medium',
+  Large = 'large',
+}
+
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant: 'primary' | 'outline'
+  variant: Variants
+  size: Sizes
   disabled?: boolean
   bold?: boolean
 }
 
 /**
- * Renders a Button component with a given variant, option, and other props.
+ * Renders a button component with customizable variant, size, and other props.
  *
- * @param {Object} props - The props object containing:
- *   @param {string} variant - The variant type of the button. Possible values are "primary" or anything else.
- *   @param {boolean} option - The option type of the button. If true, the button is disabled. Otherwise, the button is active.
- *   @param {Object} ...props - The remaining props to be passed to the button.
- * @return {JSX.Element} A button component with the given props and variant.
+ * @param {Props} param - An object containing the props for the button component.
+ * @param {string} param.variant - The variant of the button (e.g., 'primary', 'outline').
+ * @param {string} param.size - The size of the button (e.g., 'default', 'small', 'medium', 'large').
+ * @param {boolean} param.disabled - Specifies if the button is disabled.
+ * @param {boolean} param.bold - Specifies if the button text should be bold.
+ * @param {...any} param.props - Additional props to be spread on the button element.
+ * @return {JSX.Element} - The rendered button component.
  */
-export default function Button({ variant, disabled, bold, ...props }: Props) {
-  const classbutton = `h-[44px] rounded-md border text-center text-base
-    ${bold === true ? 'font-bold' : 'font-normal'}
-    ${
-      variant === 'primary'
-        ? 'bg-black text-white border-white'
-        : 'bg-white text-black border-dark-violet'
+export default function Button({
+  variant,
+  size,
+  disabled,
+  bold,
+  ...props
+}: Props) {
+  const classbutton = classnames(
+    'h-[44px] rounded-md border text-center text-base',
+    {
+      'bg-black text-white border-white': variant === Variants.Primary,
+      'bg-white text-black border-dark-violet': variant === Variants.Outline,
+      'bg-light-gray text-dark-gray outline-none cursor-not-allowed':
+        disabled === true,
+      'active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover':
+        disabled === false,
+      'font-bold': bold === true,
+      'font-normal': bold === false,
+      'w-32': size === Sizes.Default,
+      'h-7 w-14 rounded': size === Sizes.Small,
+      'w-44': size === Sizes.Medium,
+      'w-72': size === Sizes.Large,
     }
-    ${
-      disabled === true
-        ? 'bg-light-gray text-dark-gray outline-none cursor-not-allowed'
-        : 'active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover'
-    }
-  `
+  )
 
   return <button type="button" {...props} className={classbutton} />
 }

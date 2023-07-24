@@ -3,7 +3,7 @@ import Link from 'next/link'
 import InputField from '@/components/InputField'
 import InputPassword from '@/components/InputPassword'
 import Logo from '@/components/Logo'
-import Button from '@/components/Button'
+import Button, { Variants, Sizes } from '@/components/Button'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { setCookie } from 'cookies-next'
@@ -101,7 +101,8 @@ export default function Login() {
           <div className="flex flex-col">
             <Button
               type="submit"
-              variant="primary"
+              variant={Variants.Primary}
+              size={Sizes.Large}
               disabled={!validForm}
               bold={true}
             >
@@ -125,7 +126,12 @@ export default function Login() {
         <div className="m-4 text-center">Don&apos;t have an account?</div>
         <Link href="/signup" tabIndex={-1}>
           <div className="mx-[34px] flex flex-col">
-            <Button variant="outline" disabled={false} bold={true}>
+            <Button
+              variant={Variants.Primary}
+              size={Sizes.Large}
+              disabled={false}
+              bold={true}
+            >
               Sign up
             </Button>
           </div>

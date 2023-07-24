@@ -3,7 +3,7 @@ import Link from 'next/link'
 import InputField from '@/components/InputField'
 import InputPassword from '@/components/InputPassword'
 import Logo from '@/components/Logo'
-import Button from '@/components/Button'
+import Button, { Variants, Sizes } from '@/components/Button'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
@@ -131,7 +131,7 @@ export default function SignUp() {
 
           <div className="flex flex-col">
             <Button
-              variant="primary"
+              variant={Variants.Primary} size={Sizes.Large}
               disabled={!validForm}
               onClick={handleSubmit}
               bold={true}

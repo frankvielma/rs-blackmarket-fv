@@ -98,11 +98,7 @@ exports[`Login renders login unchanged 1`] = `
           class="flex flex-col"
         >
           <button
-            class="h-[44px] rounded-md border text-center text-base
-    font-bold
-    bg-black text-white border-white
-    bg-light-gray text-dark-gray outline-none cursor-not-allowed
-  "
+            class="h-[44px] rounded-md border text-center text-base bg-black text-white border-white bg-light-gray text-dark-gray outline-none cursor-not-allowed font-bold w-72"
             type="submit"
           >
             Log in
@@ -139,11 +135,7 @@ exports[`Login renders login unchanged 1`] = `
           class="mx-[34px] flex flex-col"
         >
           <button
-            class="h-[44px] rounded-md border text-center text-base
-    font-bold
-    bg-white text-black border-dark-violet
-    active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover
-  "
+            class="h-[44px] rounded-md border text-center text-base bg-black text-white border-white active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover font-bold w-72"
             type="button"
           >
             Sign up
