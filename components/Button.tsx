@@ -18,7 +18,7 @@ export default function Button({ variant, disabled, bold, ...props }: Props) {
     ${bold === true ? 'font-bold' : 'font-normal'}
     ${
       variant === 'primary'
-        ? 'bg-black text-white border-none'
+        ? 'bg-black text-white border-white'
         : 'bg-white text-black border-dark-violet'
     }
     ${
