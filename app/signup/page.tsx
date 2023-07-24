@@ -132,8 +132,9 @@ export default function SignUp() {
           <div className="flex flex-col">
             <Button
               variant="primary"
-              option={!validForm}
+              disabled={!validForm}
               onClick={handleSubmit}
+              bold={true}
             >
               Sign up
             </Button>

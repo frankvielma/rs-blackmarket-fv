@@ -99,7 +99,12 @@ export default function Login() {
             onChange={handlePasswordChange}
           />
           <div className="flex flex-col">
-            <Button type="submit" variant="primary" option={!validForm}>
+            <Button
+              type="submit"
+              variant="primary"
+              disabled={!validForm}
+              bold={true}
+            >
               Log in
             </Button>
           </div>
@@ -120,7 +125,7 @@ export default function Login() {
         <div className="m-4 text-center">Don&apos;t have an account?</div>
         <Link href="/signup" tabIndex={-1}>
           <div className="mx-[34px] flex flex-col">
-            <Button variant="outline" option={false}>
+            <Button variant="outline" disabled={false} bold={true}>
               Sign up
             </Button>
           </div>
