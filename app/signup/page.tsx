@@ -131,7 +131,8 @@ export default function SignUp() {
 
           <div className="flex flex-col">
             <Button
-              variant={Variants.Primary} size={Sizes.Large}
+              variant={Variants.Primary}
+              size={Sizes.Large}
               disabled={!validForm}
               onClick={handleSubmit}
               bold={true}
