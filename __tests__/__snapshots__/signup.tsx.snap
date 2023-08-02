@@ -142,10 +142,7 @@ exports[`Signup renders signup unchanged 1`] = `
           class="flex flex-col"
         >
           <button
-            class="h-[44px] rounded-md border text-center font-bold 
-    bg-black text-white border-none
-    bg-light-gray font-bold text-dark-gray outline-none cursor-not-allowed
-    "
+            class="h-[44px] rounded-md border text-center text-base bg-black text-white border-white bg-light-gray text-dark-gray outline-none cursor-not-allowed font-bold w-72"
             type="button"
           >
             Sign up

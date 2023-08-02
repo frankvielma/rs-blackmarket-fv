@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders header 1`] = `
+<div>
+  <header
+    class="h-14 w-screen bg-black px-4 lg:h-24"
+  >
+    <div
+      class="mx-auto flex h-14 items-center justify-between px-4 lg:h-24"
+    >
+      <div
+        class="custom-focus rounded-md border-none bg-black text-white"
+      >
+        <a
+          href="/dashboard"
+        >
+          <img
+            alt="Black Market"
+            class="h-auto w-full"
+            data-nimg="1"
+            decoding="async"
+            height="0"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimages%2Flogo_header.png&w=3840&q=75"
+            srcset="/_next/image?url=%2Fimages%2Flogo_header.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Flogo_header.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Flogo_header.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Flogo_header.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Flogo_header.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Flogo_header.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Flogo_header.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Flogo_header.png&w=3840&q=75 3840w"
+            style="color: transparent;"
+            width="0"
+          />
+        </a>
+      </div>
+      <div
+        class="custom-focus hidden rounded-md border-none bg-black text-black hover:bg-hover active:bg-hover active:outline-none active:ring-2 active:ring-offset-2 lg:block"
+      >
+        <input
+          class="h-10 w-[28.5rem] rounded-md bg-white px-3 py-2"
+          placeholder="Search for products"
+          style="background-image: url(/images/search.svg); background-repeat: no-repeat;"
+          type="text"
+        />
+      </div>
+      <div
+        class="custom-focus hidden space-x-2 rounded-md border-none bg-black text-white hover:bg-hover active:bg-hover active:outline-none active:ring-2 active:ring-offset-2 lg:block"
+      >
+        <button
+          aria-expanded="false"
+          aria-haspopup="menu"
+          class="group flex h-min items-center justify-center p-0.5 text-center font-medium relative focus:z-10 focus:outline-none text-white bg-cyan-700 border border-transparent enabled:hover:bg-cyan-800 focus:ring-cyan-300 dark:bg-cyan-600 dark:enabled:hover:bg-cyan-700 dark:focus:ring-cyan-800 rounded-lg focus:ring-2 w-fit"
+          data-testid="flowbite-dropdown-target"
+          id=":r1:"
+          type="button"
+        >
+          <span
+            class="flex items-stretch transition-all duration-200 rounded-md text-base px-5 py-2.5"
+          >
+            My Account
+            <svg
+              aria-hidden="true"
+              class="ml-2 h-4 w-4"
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div
+        class="hidden lg:block"
+      >
+        <a
+          class="custom-focus rounded-md border-none bg-black text-white hover:bg-hover active:bg-hover active:outline-none active:ring-2 active:ring-offset-2"
+          href="/cart"
+        >
+          <button
+            class="h-[44px] rounded-md border text-center text-base bg-black text-white border-white active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover font-normal w-44"
+            type="button"
+          >
+            Shopping Cart
+            <svg
+              class="mx-2 inline text-white"
+              fill="none"
+              height="15"
+              viewBox="0 0 17 15"
+              width="17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.65385 13.2273C6.65385 13.572 6.53205 13.8703 6.28846 14.1222C6.04487 14.3741 5.75641 14.5 5.42308 14.5C5.08974 14.5 4.80128 14.3741 4.55769 14.1222C4.3141 13.8703 4.19231 13.572 4.19231 13.2273C4.19231 12.8826 4.3141 12.5843 4.55769 12.3324C4.80128 12.0805 5.08974 11.9545 5.42308 11.9545C5.75641 11.9545 6.04487 12.0805 6.28846 12.3324C6.53205 12.5843 6.65385 12.8826 6.65385 13.2273ZM15.2692 13.2273C15.2692 13.572 15.1474 13.8703 14.9038 14.1222C14.6603 14.3741 14.3718 14.5 14.0385 14.5C13.7051 14.5 13.4167 14.3741 13.1731 14.1222C12.9295 13.8703 12.8077 13.572 12.8077 13.2273C12.8077 12.8826 12.9295 12.5843 13.1731 12.3324C13.4167 12.0805 13.7051 11.9545 14.0385 11.9545C14.3718 11.9545 14.6603 12.0805 14.9038 12.3324C15.1474 12.5843 15.2692 12.8826 15.2692 13.2273ZM16.5 2.40909V7.5C16.5 7.65909 16.4471 7.79995 16.3413 7.92258C16.2356 8.04522 16.1058 8.11648 15.9519 8.13636L5.91346 9.34943C5.99679 9.74716 6.03846 9.97917 6.03846 10.0455C6.03846 10.1515 5.96154 10.3636 5.80769 10.6818H14.6538C14.8205 10.6818 14.9647 10.7448 15.0865 10.8707C15.2083 10.9967 15.2692 11.1458 15.2692 11.3182C15.2692 11.4905 15.2083 11.6397 15.0865 11.7656C14.9647 11.8916 14.8205 11.9545 14.6538 11.9545H4.80769C4.64103 11.9545 4.49679 11.8916 4.375 11.7656C4.25321 11.6397 4.19231 11.4905 4.19231 11.3182C4.19231 11.2453 4.21795 11.1409 4.26923 11.005C4.32051 10.8691 4.37179 10.7498 4.42308 10.647C4.47436 10.5443 4.54327 10.4117 4.62981 10.2493C4.71635 10.0869 4.76603 9.98911 4.77885 9.95597L3.07692 1.77273H1.11538C0.948718 1.77273 0.804487 1.70975 0.682692 1.58381C0.560897 1.45786 0.5 1.30871 0.5 1.13636C0.5 0.964015 0.560897 0.814867 0.682692 0.68892C0.804487 0.562973 0.948718 0.5 1.11538 0.5H3.57692C3.67949 0.5 3.77083 0.521544 3.85096 0.564631C3.93109 0.607718 3.99359 0.659091 4.03846 0.71875C4.08333 0.778409 4.125 0.859612 4.16346 0.962358C4.20192 1.0651 4.22756 1.15128 4.24038 1.22088C4.25321 1.29048 4.27083 1.38826 4.29327 1.5142C4.31571 1.64015 4.33013 1.72633 4.33654 1.77273H15.8846C16.0513 1.77273 16.1955 1.8357 16.3173 1.96165C16.4391 2.08759 16.5 2.23674 16.5 2.40909Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </a>
+      </div>
+      <div
+        class="flex items-center justify-end space-x-2 pr-4 lg:hidden"
+      >
+        <div>
+          <button
+            class="disabled:bg-light-grey disabled:text-dark-grey h-9 w-14 rounded-lg border border-white bg-dark-violet font-normal text-white hover:bg-hover focus:outline-dashed focus:outline-focus active:bg-active active:text-white active:outline active:outline-2 active:outline-active-outline disabled:outline-none"
+          >
+            <svg
+              class="inline text-white"
+              fill="none"
+              height="15"
+              viewBox="0 0 17 15"
+              width="17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.65385 13.2273C6.65385 13.572 6.53205 13.8703 6.28846 14.1222C6.04487 14.3741 5.75641 14.5 5.42308 14.5C5.08974 14.5 4.80128 14.3741 4.55769 14.1222C4.3141 13.8703 4.19231 13.572 4.19231 13.2273C4.19231 12.8826 4.3141 12.5843 4.55769 12.3324C4.80128 12.0805 5.08974 11.9545 5.42308 11.9545C5.75641 11.9545 6.04487 12.0805 6.28846 12.3324C6.53205 12.5843 6.65385 12.8826 6.65385 13.2273ZM15.2692 13.2273C15.2692 13.572 15.1474 13.8703 14.9038 14.1222C14.6603 14.3741 14.3718 14.5 14.0385 14.5C13.7051 14.5 13.4167 14.3741 13.1731 14.1222C12.9295 13.8703 12.8077 13.572 12.8077 13.2273C12.8077 12.8826 12.9295 12.5843 13.1731 12.3324C13.4167 12.0805 13.7051 11.9545 14.0385 11.9545C14.3718 11.9545 14.6603 12.0805 14.9038 12.3324C15.1474 12.5843 15.2692 12.8826 15.2692 13.2273ZM16.5 2.40909V7.5C16.5 7.65909 16.4471 7.79995 16.3413 7.92258C16.2356 8.04522 16.1058 8.11648 15.9519 8.13636L5.91346 9.34943C5.99679 9.74716 6.03846 9.97917 6.03846 10.0455C6.03846 10.1515 5.96154 10.3636 5.80769 10.6818H14.6538C14.8205 10.6818 14.9647 10.7448 15.0865 10.8707C15.2083 10.9967 15.2692 11.1458 15.2692 11.3182C15.2692 11.4905 15.2083 11.6397 15.0865 11.7656C14.9647 11.8916 14.8205 11.9545 14.6538 11.9545H4.80769C4.64103 11.9545 4.49679 11.8916 4.375 11.7656C4.25321 11.6397 4.19231 11.4905 4.19231 11.3182C4.19231 11.2453 4.21795 11.1409 4.26923 11.005C4.32051 10.8691 4.37179 10.7498 4.42308 10.647C4.47436 10.5443 4.54327 10.4117 4.62981 10.2493C4.71635 10.0869 4.76603 9.98911 4.77885 9.95597L3.07692 1.77273H1.11538C0.948718 1.77273 0.804487 1.70975 0.682692 1.58381C0.560897 1.45786 0.5 1.30871 0.5 1.13636C0.5 0.964015 0.560897 0.814867 0.682692 0.68892C0.804487 0.562973 0.948718 0.5 1.11538 0.5H3.57692C3.67949 0.5 3.77083 0.521544 3.85096 0.564631C3.93109 0.607718 3.99359 0.659091 4.03846 0.71875C4.08333 0.778409 4.125 0.859612 4.16346 0.962358C4.20192 1.0651 4.22756 1.15128 4.24038 1.22088C4.25321 1.29048 4.27083 1.38826 4.29327 1.5142C4.31571 1.64015 4.33013 1.72633 4.33654 1.77273H15.8846C16.0513 1.77273 16.1955 1.8357 16.3173 1.96165C16.4391 2.08759 16.5 2.23674 16.5 2.40909Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="custom-focus space-x-2 rounded-md border-none bg-black text-white hover:bg-hover active:bg-hover active:outline-none active:ring-2 active:ring-offset-2 lg:hidden"
+        >
+          <button
+            aria-expanded="false"
+            aria-haspopup="menu"
+            class="group flex h-min items-center justify-center p-0.5 text-center font-medium relative focus:z-10 focus:outline-none text-white bg-cyan-700 border border-transparent enabled:hover:bg-cyan-800 focus:ring-cyan-300 dark:bg-cyan-600 dark:enabled:hover:bg-cyan-700 dark:focus:ring-cyan-800 rounded-lg focus:ring-2 w-fit"
+            data-testid="flowbite-dropdown-target"
+            id=":r3:"
+            type="button"
+          >
+            <span
+              class="flex items-stretch transition-all duration-200 rounded-md text-base px-5 py-2.5"
+            >
+              <svg
+                class="inline text-white"
+                fill="none"
+                height="12"
+                viewBox="0 0 18 12"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 11.625C0.783333 11.625 0.604333 11.5543 0.463 11.413C0.321 11.271 0.25 11.0917 0.25 10.875C0.25 10.675 0.321 10.5 0.463 10.35C0.604333 10.2 0.783333 10.125 1 10.125H17C17.2167 10.125 17.396 10.2 17.538 10.35C17.6793 10.5 17.75 10.675 17.75 10.875C17.75 11.0917 17.6793 11.271 17.538 11.413C17.396 11.5543 17.2167 11.625 17 11.625H1ZM1 6.75C0.783333 6.75 0.604333 6.679 0.463 6.537C0.321 6.39567 0.25 6.21667 0.25 6C0.25 5.78333 0.321 5.604 0.463 5.462C0.604333 5.32067 0.783333 5.25 1 5.25H17C17.2167 5.25 17.396 5.32067 17.538 5.462C17.6793 5.604 17.75 5.78333 17.75 6C17.75 6.21667 17.6793 6.39567 17.538 6.537C17.396 6.679 17.2167 6.75 17 6.75H1ZM1 1.875C0.783333 1.875 0.604333 1.8 0.463 1.65C0.321 1.5 0.25 1.325 0.25 1.125C0.25 0.908333 0.321 0.729333 0.463 0.588C0.604333 0.446 0.783333 0.375 1 0.375H17C17.2167 0.375 17.396 0.446 17.538 0.588C17.6793 0.729333 17.75 0.908333 17.75 1.125C17.75 1.325 17.6793 1.5 17.538 1.65C17.396 1.8 17.2167 1.875 17 1.875H1Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mt-4 flex flex-col rounded-md bg-white lg:hidden"
+    >
+      <input
+        class="h-10 rounded-md bg-white px-3 py-2 "
+        placeholder="Search for products"
+        style="background-image: url(/images/search.svg); background-repeat: no-repeat;"
+        type="text"
+      />
+    </div>
+  </header>
+</div>
+`;

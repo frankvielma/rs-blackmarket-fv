@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders button with outline variant, disabled and not bold label 1`] = `
+<div>
+  <button
+    class="h-[44px] rounded-md border text-center text-base bg-black text-white border-white bg-light-gray text-dark-gray outline-none cursor-not-allowed font-normal w-72"
+    type="button"
+  />
+</div>
+`;
+
+exports[`Button renders button with primary variant, disabled and bold label 1`] = `
+<div>
+  <button
+    class="h-[44px] rounded-md border text-center text-base bg-black text-white border-white bg-light-gray text-dark-gray outline-none cursor-not-allowed font-bold w-32"
+    type="button"
+  />
+</div>
+`;
+
+exports[`Button renders button with primary variant, enabled and not bold label 1`] = `
+<div>
+  <button
+    class="h-[44px] rounded-md border text-center text-base bg-black text-white border-white active:ring-2 active:ring-offset-2 active:outline-none custom-focus hover:bg-hover active:bg-hover font-normal w-44"
+    type="button"
+  />
+</div>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdpwn Big renders Dropdpwn Big 1`] = `
+<div>
+  <div
+    class="custom-focus hidden space-x-2 rounded-md border-none bg-black text-white hover:bg-hover active:bg-hover active:outline-none active:ring-2 active:ring-offset-2 lg:block"
+  >
+    <button
+      aria-expanded="false"
+      aria-haspopup="menu"
+      class="group flex h-min items-center justify-center p-0.5 text-center font-medium relative focus:z-10 focus:outline-none text-white bg-cyan-700 border border-transparent enabled:hover:bg-cyan-800 focus:ring-cyan-300 dark:bg-cyan-600 dark:enabled:hover:bg-cyan-700 dark:focus:ring-cyan-800 rounded-lg focus:ring-2 w-fit"
+      data-testid="flowbite-dropdown-target"
+      id=":r1:"
+      type="button"
+    >
+      <span
+        class="flex items-stretch transition-all duration-200 rounded-md text-base px-5 py-2.5"
+      >
+        My Account
+        <svg
+          aria-hidden="true"
+          class="ml-2 h-4 w-4"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 9l-7 7-7-7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+</div>
+`;
