@@ -40,43 +40,39 @@ exports[`Header renders header 1`] = `
         />
       </div>
       <div
-        class="hidden lg:block"
+        class="custom-focus space-x-2 rounded-md border-none bg-black text-white hover:bg-hover active:bg-hover active:outline-none active:ring-2 active:ring-offset-2 hidden lg:block"
       >
-        <div
-          class="custom-focus space-x-2 rounded-md border-none bg-black text-white hover:bg-hover active:bg-hover active:outline-none active:ring-2 active:ring-offset-2"
+        <button
+          aria-expanded="false"
+          aria-haspopup="menu"
+          class="group flex h-min items-center justify-center p-0.5 text-center font-medium relative focus:z-10 focus:outline-none text-white bg-cyan-700 border border-transparent enabled:hover:bg-cyan-800 focus:ring-cyan-300 dark:bg-cyan-600 dark:enabled:hover:bg-cyan-700 dark:focus:ring-cyan-800 rounded-lg focus:ring-2 w-fit"
+          data-testid="flowbite-dropdown-target"
+          id=":r1:"
+          type="button"
         >
-          <button
-            aria-expanded="false"
-            aria-haspopup="menu"
-            class="group flex h-min items-center justify-center p-0.5 text-center font-medium relative focus:z-10 focus:outline-none text-white bg-cyan-700 border border-transparent enabled:hover:bg-cyan-800 focus:ring-cyan-300 dark:bg-cyan-600 dark:enabled:hover:bg-cyan-700 dark:focus:ring-cyan-800 rounded-lg focus:ring-2 w-fit"
-            data-testid="flowbite-dropdown-target"
-            id=":r1:"
-            type="button"
+          <span
+            class="flex items-stretch transition-all duration-200 rounded-md text-base px-5 py-2.5"
           >
-            <span
-              class="flex items-stretch transition-all duration-200 rounded-md text-base px-5 py-2.5"
+            My Account
+            <svg
+              aria-hidden="true"
+              class="ml-2 h-4 w-4"
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              My Account
-              <svg
-                aria-hidden="true"
-                class="ml-2 h-4 w-4"
-                fill="none"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 9l-7 7-7-7"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
       <div
         class="hidden lg:block"
@@ -111,7 +107,7 @@ exports[`Header renders header 1`] = `
       >
         <div>
           <button
-            class="disabled:bg-light-grey disabled:text-dark-grey h-11 h-7 w-14 rounded rounded-lg border border-white bg-dark-violet font-normal text-white hover:bg-hover focus:outline-dashed focus:outline-focus active:bg-active active:text-white active:outline active:outline-2 active:outline-active-outline disabled:outline-none"
+            class="disabled:bg-light-grey disabled:text-dark-grey h-9 w-14 rounded-lg border border-white bg-dark-violet font-normal text-white hover:bg-hover focus:outline-dashed focus:outline-focus active:bg-active active:text-white active:outline active:outline-2 active:outline-active-outline disabled:outline-none"
           >
             <svg
               class="inline text-white"
@@ -128,23 +124,34 @@ exports[`Header renders header 1`] = `
             </svg>
           </button>
         </div>
-        <div>
+        <div
+          class="custom-focus space-x-2 rounded-md border-none bg-black text-white hover:bg-hover active:bg-hover active:outline-none active:ring-2 active:ring-offset-2 lg:hidden"
+        >
           <button
-            class="disabled:bg-light-grey disabled:text-dark-grey h-11 h-7 w-14 rounded rounded-lg border border-white bg-dark-violet font-normal text-white hover:bg-hover focus:outline-dashed focus:outline-focus active:bg-active active:text-white active:outline active:outline-2 active:outline-active-outline disabled:outline-none"
+            aria-expanded="false"
+            aria-haspopup="menu"
+            class="group flex h-min items-center justify-center p-0.5 text-center font-medium relative focus:z-10 focus:outline-none text-white bg-cyan-700 border border-transparent enabled:hover:bg-cyan-800 focus:ring-cyan-300 dark:bg-cyan-600 dark:enabled:hover:bg-cyan-700 dark:focus:ring-cyan-800 rounded-lg focus:ring-2 w-fit"
+            data-testid="flowbite-dropdown-target"
+            id=":r3:"
+            type="button"
           >
-            <svg
-              class="inline text-white"
-              fill="none"
-              height="12"
-              viewBox="0 0 18 12"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              class="flex items-stretch transition-all duration-200 rounded-md text-base px-5 py-2.5"
             >
-              <path
-                d="M1 11.625C0.783333 11.625 0.604333 11.5543 0.463 11.413C0.321 11.271 0.25 11.0917 0.25 10.875C0.25 10.675 0.321 10.5 0.463 10.35C0.604333 10.2 0.783333 10.125 1 10.125H17C17.2167 10.125 17.396 10.2 17.538 10.35C17.6793 10.5 17.75 10.675 17.75 10.875C17.75 11.0917 17.6793 11.271 17.538 11.413C17.396 11.5543 17.2167 11.625 17 11.625H1ZM1 6.75C0.783333 6.75 0.604333 6.679 0.463 6.537C0.321 6.39567 0.25 6.21667 0.25 6C0.25 5.78333 0.321 5.604 0.463 5.462C0.604333 5.32067 0.783333 5.25 1 5.25H17C17.2167 5.25 17.396 5.32067 17.538 5.462C17.6793 5.604 17.75 5.78333 17.75 6C17.75 6.21667 17.6793 6.39567 17.538 6.537C17.396 6.679 17.2167 6.75 17 6.75H1ZM1 1.875C0.783333 1.875 0.604333 1.8 0.463 1.65C0.321 1.5 0.25 1.325 0.25 1.125C0.25 0.908333 0.321 0.729333 0.463 0.588C0.604333 0.446 0.783333 0.375 1 0.375H17C17.2167 0.375 17.396 0.446 17.538 0.588C17.6793 0.729333 17.75 0.908333 17.75 1.125C17.75 1.325 17.6793 1.5 17.538 1.65C17.396 1.8 17.2167 1.875 17 1.875H1Z"
-                fill="currentColor"
-              />
-            </svg>
+              <svg
+                class="inline text-white"
+                fill="none"
+                height="12"
+                viewBox="0 0 18 12"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 11.625C0.783333 11.625 0.604333 11.5543 0.463 11.413C0.321 11.271 0.25 11.0917 0.25 10.875C0.25 10.675 0.321 10.5 0.463 10.35C0.604333 10.2 0.783333 10.125 1 10.125H17C17.2167 10.125 17.396 10.2 17.538 10.35C17.6793 10.5 17.75 10.675 17.75 10.875C17.75 11.0917 17.6793 11.271 17.538 11.413C17.396 11.5543 17.2167 11.625 17 11.625H1ZM1 6.75C0.783333 6.75 0.604333 6.679 0.463 6.537C0.321 6.39567 0.25 6.21667 0.25 6C0.25 5.78333 0.321 5.604 0.463 5.462C0.604333 5.32067 0.783333 5.25 1 5.25H17C17.2167 5.25 17.396 5.32067 17.538 5.462C17.6793 5.604 17.75 5.78333 17.75 6C17.75 6.21667 17.6793 6.39567 17.538 6.537C17.396 6.679 17.2167 6.75 17 6.75H1ZM1 1.875C0.783333 1.875 0.604333 1.8 0.463 1.65C0.321 1.5 0.25 1.325 0.25 1.125C0.25 0.908333 0.321 0.729333 0.463 0.588C0.604333 0.446 0.783333 0.375 1 0.375H17C17.2167 0.375 17.396 0.446 17.538 0.588C17.6793 0.729333 17.75 0.908333 17.75 1.125C17.75 1.325 17.6793 1.5 17.538 1.65C17.396 1.8 17.2167 1.875 17 1.875H1Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
           </button>
         </div>
       </div>

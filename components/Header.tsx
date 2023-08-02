@@ -2,7 +2,8 @@ import LogoHeader from '@/components/LogoHeader'
 import Link from 'next/link'
 import Cart from '@/components/Cart'
 import Button, { Variants, Sizes } from '@/components/Button'
-import Dropdown from '@/components/DropdownCustom'
+import DropdownBig from '@/components/DropdownBig'
+import DropdownSmall from '@/components/DropdownSmall'
 
 export default function Header() {
   return (
@@ -25,9 +26,7 @@ export default function Header() {
             }}
           />
         </div>
-        <div className="hidden lg:block">
-          <Dropdown />
-        </div>
+        <DropdownBig />
 
         <div className="hidden lg:block">
           <Link
@@ -48,7 +47,7 @@ export default function Header() {
 
         <div className="flex items-center justify-end space-x-2 pr-4 lg:hidden">
           <div>
-            <button className="disabled:bg-light-grey disabled:text-dark-grey h-11 h-7 w-14 rounded rounded-lg border border-white bg-dark-violet font-normal text-white hover:bg-hover focus:outline-dashed focus:outline-focus active:bg-active active:text-white active:outline active:outline-2 active:outline-active-outline disabled:outline-none">
+            <button className="disabled:bg-light-grey disabled:text-dark-grey h-9 w-14 rounded-lg border border-white bg-dark-violet font-normal text-white hover:bg-hover focus:outline-dashed focus:outline-focus active:bg-active active:text-white active:outline active:outline-2 active:outline-active-outline disabled:outline-none">
               <svg
                 className="inline text-white"
                 width="17"
@@ -64,23 +63,7 @@ export default function Header() {
               </svg>
             </button>
           </div>
-          <div>
-            <button className="disabled:bg-light-grey disabled:text-dark-grey h-11 h-7 w-14 rounded rounded-lg border border-white bg-dark-violet font-normal text-white hover:bg-hover focus:outline-dashed focus:outline-focus active:bg-active active:text-white active:outline active:outline-2 active:outline-active-outline disabled:outline-none">
-              <svg
-                width="18"
-                height="12"
-                viewBox="0 0 18 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="inline text-white"
-              >
-                <path
-                  d="M1 11.625C0.783333 11.625 0.604333 11.5543 0.463 11.413C0.321 11.271 0.25 11.0917 0.25 10.875C0.25 10.675 0.321 10.5 0.463 10.35C0.604333 10.2 0.783333 10.125 1 10.125H17C17.2167 10.125 17.396 10.2 17.538 10.35C17.6793 10.5 17.75 10.675 17.75 10.875C17.75 11.0917 17.6793 11.271 17.538 11.413C17.396 11.5543 17.2167 11.625 17 11.625H1ZM1 6.75C0.783333 6.75 0.604333 6.679 0.463 6.537C0.321 6.39567 0.25 6.21667 0.25 6C0.25 5.78333 0.321 5.604 0.463 5.462C0.604333 5.32067 0.783333 5.25 1 5.25H17C17.2167 5.25 17.396 5.32067 17.538 5.462C17.6793 5.604 17.75 5.78333 17.75 6C17.75 6.21667 17.6793 6.39567 17.538 6.537C17.396 6.679 17.2167 6.75 17 6.75H1ZM1 1.875C0.783333 1.875 0.604333 1.8 0.463 1.65C0.321 1.5 0.25 1.325 0.25 1.125C0.25 0.908333 0.321 0.729333 0.463 0.588C0.604333 0.446 0.783333 0.375 1 0.375H17C17.2167 0.375 17.396 0.446 17.538 0.588C17.6793 0.729333 17.75 0.908333 17.75 1.125C17.75 1.325 17.6793 1.5 17.538 1.65C17.396 1.8 17.2167 1.875 17 1.875H1Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </button>
-          </div>
+          <DropdownSmall />
         </div>
       </div>
       <div className="mt-4 flex flex-col rounded-md bg-white lg:hidden">
