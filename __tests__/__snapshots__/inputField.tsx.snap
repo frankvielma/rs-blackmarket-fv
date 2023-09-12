@@ -10,7 +10,7 @@ exports[`inputField renders inputField unchanged 1`] = `
       for=""
     />
     <input
-      class="border custom-focus h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray hover:border-hover active:outline-none active:ring-2 active:ring-offset-2 md:h-[44px]"
+      class="border text-black custom-focus h-[34px] w-auto rounded-md border border-dark-violet ps-3 placeholder:text-base placeholder:text-dark-gray hover:border-hover active:outline-none active:ring-2 active:ring-offset-2 md:h-[44px]"
       id=""
       placeholder=""
       required=""

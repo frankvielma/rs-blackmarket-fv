@@ -16,7 +16,7 @@ export default function Button({ variant, option, ...props }: Props) {
   const classbutton = `h-[44px] rounded-md border text-center font-bold 
     ${
       variant === 'primary'
-        ? 'bg-black text-white border-none'
+        ? 'bg-black text-white border w-full'
         : 'bg-white text-black border-dark-violet'
     }
     ${
