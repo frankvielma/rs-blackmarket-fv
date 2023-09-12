@@ -41,7 +41,7 @@ export default function InputField({
       <input
         id={id}
         placeholder={placeholder}
-        className={`border ${
+        className={`border text-black ${
           validationMessage ? 'border-red-600 ' + cssStyle : cssStyle
         }`}
         type={type}
